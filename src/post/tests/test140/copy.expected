@@ -1,0 +1,11 @@
+post/tests/test140/source.c:8:TENTATIVE_EIO* returned from function xfs_error_trap
+post/tests/test140/source.c:5:"e" may have an unchecked error
+
+post/tests/test140/source.c:8:TENTATIVE_EIO* returned from function xfs_error_trap
+====
+post/tests/test140/source.c:15:TENTATIVE_EIO* returned from function foo
+post/tests/test140/source.c:15:"cabs2cil_" receives an error from function "xfs_error_trap"
+
+post/tests/test140/source.c:15:TENTATIVE_EIO* returned from function foo
+post/tests/test140/source.c:15:"cabs2cil_" receives an error from function "xfs_error_trap"
+====

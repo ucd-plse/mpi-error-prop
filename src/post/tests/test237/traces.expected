@@ -1,0 +1,6 @@
+ID|foo.12bbe HNDL|CALL|callB 
+PRE_INTRA|foo.12bbe PRE|CALL|bar PRE|STORE|foo#err PRE|LOAD|foo#err PRE|CALL|callA PRE|LOAD|foo#err 
+POST_INTRA|foo.12bbe POST|CALL|callB POST|LOAD|foo#err POST|CALL|callG POST|LOAD|foo#err POST|LOAD|foo#err POST|LOAD|foo#err POST|CALL|callF POST|CALL|callE POST|CALL|callD POST|CALL|callC 
+ID|foo.7bbe HNDL|CALL|callA 
+PRE_INTRA|foo.7bbe PRE|CALL|bar PRE|STORE|foo#err PRE|LOAD|foo#err 
+POST_INTRA|foo.7bbe POST|CALL|callA POST|LOAD|foo#err POST|LOAD|foo#err POST|CALL|callG POST|LOAD|foo#err POST|LOAD|foo#err POST|LOAD|foo#err POST|CALL|callF POST|CALL|callE POST|CALL|callD POST|CALL|callC POST|CALL|callB 

@@ -1,0 +1,25 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test238/source.c:7: potential unchecked error in out of scope variable "err"
+post/tests/test238/source.c:6:"err" may have an unchecked error
+post/tests/test238/source.c:11:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test238/source.c:7: potential unchecked error in out of scope variable "err"
+post/tests/test238/source.c:11:"TENTATIVE_EIO" error is passed as argument
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test238/source.c:12: potential unchecked error in out of scope variable "err"
+post/tests/test238/source.c:11:"err" may have an unchecked error
+post/tests/test238/source.c:11:"err" receives an error from function "foo"
+post/tests/test238/source.c:7: an unchecked error may be returned
+post/tests/test238/source.c:6:"ret" receives an error from "err"
+post/tests/test238/source.c:6:"err" may have an unchecked error
+post/tests/test238/source.c:11:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test238/source.c:12: potential unchecked error in out of scope variable "err"
+post/tests/test238/source.c:11:"err" receives an error from function "foo"
+post/tests/test238/source.c:7: an unchecked error may be returned
+post/tests/test238/source.c:6:"ret" receives an error from "err"
+post/tests/test238/source.c:11:"TENTATIVE_EIO" error is passed as argument
+====

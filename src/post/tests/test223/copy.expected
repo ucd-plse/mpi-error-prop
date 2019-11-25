@@ -1,0 +1,16 @@
+Error codes: *EIO 
+
+post/tests/test223/source.c:22: potential non-tentative unchecked error is not saved
+post/tests/test223/source.c:6: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test223/source.c:22: potential non-tentative unchecked error is not saved
+post/tests/test223/source.c:6: unchecked error "TENTATIVE_EIO" is returned
+====
+Error codes: *ENXIO 
+
+post/tests/test223/source.c:22: potential non-tentative unchecked error is not saved
+post/tests/test223/source.c:10: unchecked error "TENTATIVE_ENXIO" is returned
+
+post/tests/test223/source.c:22: potential non-tentative unchecked error is not saved
+post/tests/test223/source.c:10: unchecked error "TENTATIVE_ENXIO" is returned
+====

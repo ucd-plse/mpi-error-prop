@@ -1,0 +1,3 @@
+post/tests/test235/source.c 14 foo2#err EIO 
+post/tests/test235/source.c 23 bar1#err EIO 
+post/tests/test235/source.c 30 bar2#err EIO 

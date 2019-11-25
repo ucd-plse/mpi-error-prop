@@ -1,0 +1,17 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test162/source.c:13: potential unchecked error in out of scope pointer variable "e"
+post/tests/test162/source.c:18:"d" may have an unchecked error
+post/tests/test162/source.c:17:"d" may have an unchecked error
+post/tests/test162/source.c:17:"d" receives an error from "cabs2cil_"
+post/tests/test162/source.c:17:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test162/source.c:9: an unchecked error may be returned
+post/tests/test162/source.c:17:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test162/source.c:13: potential unchecked error in out of scope pointer variable "e"
+post/tests/test162/source.c:18:"d" may have an unchecked error
+post/tests/test162/source.c:17:"d" receives an error from "cabs2cil_"
+post/tests/test162/source.c:17:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test162/source.c:9: an unchecked error may be returned
+post/tests/test162/source.c:17:"TENTATIVE_EIO" error is passed as argument
+====

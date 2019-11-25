@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="Query" type="Query.type">
+    <xsd:keyref name="rule-from" refer="state-name">
+      <xsd:selector xpath="WPDS/Rule" />
+      <xsd:field xpath="@from" />
+    </xsd:keyref>
+    <xsd:keyref name="rule-to" refer="state-name">
+      <xsd:selector xpath="WPDS/Rule" />
+      <xsd:field xpath="@to" />
+    </xsd:keyref>
+  </xsd:element>
+
+  <xsd:complexType name="Query.type">
+    <xsd:sequence>
+      <xsd:element ref="FWPDS" />
+      <xsd:element ref="WFA" />
+    </xsd:sequence>
+    <xsd:attribute name="type" type="type.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="FWPDS" type="WPDS.type" />
+
+  <xsd:complexType name="WPDS.type">
+    <xsd:sequence>
+      <xsd:element ref="Prologue" maxOccurs="1" minOccurs="0" />
+      <xsd:element ref="Rule" maxOccurs="unbounded" minOccurs="1" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="Prologue" type="Prologue.type" />
+
+  <xsd:complexType name="Prologue.type">
+    <xsd:sequence>
+      <xsd:any processContents="lax" maxOccurs="unbounded"
+        minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="Rule" type="Rule.type" />
+
+  <xsd:complexType name="Rule.type">
+    <xsd:sequence>
+      <xsd:element ref="Weight" />
+      <xsd:group ref="Rule.extras" />
+    </xsd:sequence>
+    <xsd:attribute name="from" type="state.type" use="required" />
+    <xsd:attribute name="fromStack" type="stack.type" use="required" />
+    <xsd:attribute name="to" type="state.type" use="required" />
+    <xsd:attribute name="toStack1" type="stack.type" />
+    <xsd:attribute name="toStack2" type="stack.type" />
+  </xsd:complexType>
+
+  <xsd:group name="Rule.extras">
+    <xsd:sequence>
+      <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"></xsd:any>
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:element name="Weight" type="Weight.type" />
+
+  <xsd:complexType name="Weight.type" mixed="true">
+    <xsd:sequence>
+      <xsd:any processContents="lax" minOccurs="0"
+        maxOccurs="unbounded" />
+    </xsd:sequence>
+    <xsd:anyAttribute />
+  </xsd:complexType>
+
+  <xsd:element name="WFA" type="WFA.type">
+    <xsd:key name="state-name">
+      <xsd:selector xpath="State" />
+      <xsd:field xpath="@Name" />
+    </xsd:key>
+    <xsd:keyref name="trans-from" refer="state-name">
+      <xsd:selector xpath="Trans" />
+      <xsd:field xpath="@from" />
+    </xsd:keyref>
+    <xsd:keyref name="trans-to" refer="state-name">
+      <xsd:selector xpath="Trans" />
+      <xsd:field xpath="@to" />
+    </xsd:keyref>
+  </xsd:element>
+
+  <xsd:complexType name="WFA.type">
+    <xsd:sequence>
+      <xsd:element ref="State" maxOccurs="unbounded" minOccurs="1" />
+      <xsd:element ref="Trans" maxOccurs="unbounded" minOccurs="1" />
+    </xsd:sequence>
+    <xsd:attribute name="query" type="query.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="State" type="State.type" />
+
+  <xsd:complexType name="State.type">
+    <xsd:sequence>
+      <xsd:element ref="Weight" />
+    </xsd:sequence>
+    <xsd:attribute name="Name" type="Name.type" use="required" />
+    <xsd:attribute name="initial" type="xsd:boolean" default="false" />
+    <xsd:attribute name="final" type="xsd:boolean" default="false" />
+  </xsd:complexType>
+
+  <xsd:simpleType name="Name.type">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+
+  <xsd:element name="Trans" type="Trans.type" />
+
+  <xsd:complexType name="Trans.type">
+    <xsd:sequence>
+      <xsd:element ref="Weight" />
+    </xsd:sequence>
+    <xsd:attribute name="from" type="state.type" use="required" />
+    <xsd:attribute name="stack" type="stack.type" use="required" />
+    <xsd:attribute name="to" type="state.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:simpleType name="query.type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="INORDER" />
+      <xsd:enumeration value="REVERSE" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="state.type">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+
+  <xsd:simpleType name="stack.type">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+
+  <xsd:simpleType name="type.type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="prestar" />
+      <xsd:enumeration value="poststar" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

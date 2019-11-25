@@ -1,0 +1,6 @@
+ID|main.11bbe HNDL|CALL|callA 
+PRE_INTRA|main.11bbe PRE|CALL|foo1 
+POST_INTRA|main.11bbe POST|CALL|callA POST|CALL|foo2 POST|CALL|callC POST|CALL|callB 
+ID|main.16bbe HNDL|CALL|callB 
+PRE_INTRA|main.16bbe PRE|CALL|foo1 PRE|CALL|callA PRE|CALL|foo2 
+POST_INTRA|main.16bbe POST|CALL|callB POST|CALL|callC 

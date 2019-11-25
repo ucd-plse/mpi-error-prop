@@ -1,0 +1,31 @@
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test200/source.c:14: potential unchecked error in out of scope variable "y"
+post/tests/test200/source.c:13:"y" may have an unchecked error
+post/tests/test200/source.c:11:"y" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test200/source.c:14: potential unchecked error in out of scope variable "y"
+post/tests/test200/source.c:11:"y" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test200/source.c:21: overwriting potential unchecked error in variable "y"
+post/tests/test200/source.c:17:"y" may have an unchecked error
+post/tests/test200/source.c:13:"y" may have an unchecked error
+post/tests/test200/source.c:11:"y" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test200/source.c:21: overwriting potential unchecked error in variable "y"
+post/tests/test200/source.c:11:"y" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *EIO 
+
+post/tests/test200/source.c:30: potential non-tentative unchecked error is not saved
+post/tests/test200/source.c:14: an unchecked error may be returned
+post/tests/test200/source.c:13:"x" may have an unchecked error
+post/tests/test200/source.c:11:"x" may have an unchecked error
+post/tests/test200/source.c:10:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test200/source.c:30: potential non-tentative unchecked error is not saved
+post/tests/test200/source.c:14: an unchecked error may be returned
+post/tests/test200/source.c:10:"x" receives an error from "TENTATIVE_EIO"
+====

@@ -1,0 +1,9 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test120/source.c:8: overwriting potential unchecked error in variable "err"
+post/tests/test120/source.c:8:"err" may have an unchecked error
+post/tests/test120/source.c:7:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test120/source.c:8: overwriting potential unchecked error in variable "err"
+post/tests/test120/source.c:7:"err" receives an error from "TENTATIVE_EIO"
+====

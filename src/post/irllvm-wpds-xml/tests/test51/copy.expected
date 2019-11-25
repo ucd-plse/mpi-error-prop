@@ -1,0 +1,43 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test51/source.c:14: overwriting potential unchecked error in variable "y"
+post/tests/test51/source.c:12:"y" may have an unchecked error
+post/tests/test51/source.c:8:"y" may have an unchecked error
+post/tests/test51/source.c:6:"y" may have an unchecked error
+post/tests/test51/source.c:5:"y" receives an error from "TENTATIVE_EIO"
+
+post/tests/test51/source.c:14: overwriting potential unchecked error in variable "y"
+post/tests/test51/source.c:5:"y" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test51/source.c:16: overwriting potential unchecked error in variable "x"
+post/tests/test51/source.c:15:"x" may have an unchecked error
+post/tests/test51/source.c:14:"x" may have an unchecked error
+post/tests/test51/source.c:9:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test51/source.c:16: overwriting potential unchecked error in variable "x"
+post/tests/test51/source.c:9:"x" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test51/source.c:18: overwriting potential unchecked error in variable "z"
+post/tests/test51/source.c:17:"z" may have an unchecked error
+post/tests/test51/source.c:16:"z" may have an unchecked error
+post/tests/test51/source.c:15:"z" receives an error from "x"
+post/tests/test51/source.c:14:"x" may have an unchecked error
+post/tests/test51/source.c:9:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test51/source.c:18: overwriting potential unchecked error in variable "z"
+post/tests/test51/source.c:15:"z" receives an error from "x"
+post/tests/test51/source.c:9:"x" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EPERM 
+
+post/tests/test51/source.c:19: overwriting potential unchecked error in variable "y"
+post/tests/test51/source.c:18:"y" may have an unchecked error
+post/tests/test51/source.c:17:"y" receives an error from "TENTATIVE_EPERM"
+
+post/tests/test51/source.c:19: overwriting potential unchecked error in variable "y"
+post/tests/test51/source.c:17:"y" receives an error from "TENTATIVE_EPERM"
+====

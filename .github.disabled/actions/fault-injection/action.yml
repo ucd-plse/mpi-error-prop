@@ -1,0 +1,24 @@
+name: 'Fault Injection'
+description: 'Runs fault injection script on a single bug reprot.'
+inputs:  
+  dropping:
+    required: true
+  origin:
+    required: true
+  injection_strategy:
+    required: true
+  fix_strategy:
+    required: true
+  target:
+    required: true
+  library:
+    required: true
+  phase:
+    required: true 
+  expect_crash:
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://ucdavisplse/mpi-error-prop-artifact'
+  args:
+    - fault-injection github-action ${{ inputs.dropping }} ${{ inputs.origin }} ${{ inputs.injection_strategy }} ${{ inputs.fix_strategy }} ${{ inputs.target }} ${{ inputs.library }} ${{ inputs.phase }} ${{ inputs.expect_crash }}

@@ -1,0 +1,30 @@
+post/tests/test167/source.c:25: Dereferencing variable main#err3, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test167/source.c:24:"err3" may have an unchecked error
+post/tests/test167/source.c:22:"err3" may have an unchecked error
+post/tests/test167/source.c:22:"err3" receives an error from "cabs2cil_"
+post/tests/test167/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test167/source.c:8: an unchecked error may be returned
+post/tests/test167/source.c:22:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test167/source.c:25: Dereferencing variable main#err3, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test167/source.c:22:"err3" receives an error from "cabs2cil_"
+post/tests/test167/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test167/source.c:8: an unchecked error may be returned
+post/tests/test167/source.c:22:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test167/source.c:30: Dereferencing variable main#err2, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test167/source.c:29:"err2" may have an unchecked error
+post/tests/test167/source.c:24:"err2" may have an unchecked error
+post/tests/test167/source.c:22:"err2" may have an unchecked error
+post/tests/test167/source.c:21:"err2" may have an unchecked error
+post/tests/test167/source.c:21:"err2" receives an error from "cabs2cil_"
+post/tests/test167/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test167/source.c:8: an unchecked error may be returned
+post/tests/test167/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test167/source.c:30: Dereferencing variable main#err2, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test167/source.c:21:"err2" receives an error from "cabs2cil_"
+post/tests/test167/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test167/source.c:8: an unchecked error may be returned
+post/tests/test167/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+====

@@ -1,0 +1,6 @@
+post/tests/test237/source.c 18 foo#err EIO 
+post/tests/test237/source.c 23 foo#err EIO 
+post/tests/test237/source.c 29 foo#err EIO 
+post/tests/test237/source.c 38 foo#err EIO 
+post/tests/test237/source.c 44 foo#err EIO 
+post/tests/test237/source.c 50 foo#err EIO 

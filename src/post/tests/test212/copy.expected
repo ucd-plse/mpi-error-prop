@@ -1,0 +1,8 @@
+Error codes: *EIO 
+
+post/tests/test212/source.c:6: potential non-tentative unchecked error is not saved
+post/tests/test212/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test212/source.c:6: potential non-tentative unchecked error is not saved
+post/tests/test212/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====

@@ -1,0 +1,7 @@
+post/tests/test146/source.c:19: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test146/source.c:19:"rc" may have an unchecked error
+post/tests/test146/source.c:17:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test146/source.c:19: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test146/source.c:17:"rc" receives an error from "TENTATIVE_ENXIO"
+====

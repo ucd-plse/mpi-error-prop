@@ -1,0 +1,37 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test43/source.c:22: overwriting potential unchecked error in variable "var6"
+post/tests/test43/source.c:19:"var6" receives an error from "var5"
+post/tests/test43/source.c:18:"var5" receives an error from "var2"
+post/tests/test43/source.c:11:"var2" may have an unchecked error
+post/tests/test43/source.c:6:"var2" receives an error from "var1"
+post/tests/test43/source.c:5:"var1" receives an error from "err"
+post/tests/test43/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test43/source.c:22: overwriting potential unchecked error in variable "var6"
+post/tests/test43/source.c:19:"var6" receives an error from "var5"
+post/tests/test43/source.c:18:"var5" receives an error from "var2"
+post/tests/test43/source.c:6:"var2" receives an error from "var1"
+post/tests/test43/source.c:5:"var1" receives an error from "err"
+post/tests/test43/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test43/source.c:24: potential unchecked error in out of scope variable "var4"
+post/tests/test43/source.c:22:"var4" may have an unchecked error
+post/tests/test43/source.c:15:"var4" may have an unchecked error
+post/tests/test43/source.c:14:"var4" may have an unchecked error
+post/tests/test43/source.c:13:"var4" receives an error from "var3"
+post/tests/test43/source.c:12:"var3" receives an error from "var2"
+post/tests/test43/source.c:11:"var2" may have an unchecked error
+post/tests/test43/source.c:6:"var2" receives an error from "var1"
+post/tests/test43/source.c:5:"var1" receives an error from "err"
+post/tests/test43/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test43/source.c:24: potential unchecked error in out of scope variable "var4"
+post/tests/test43/source.c:13:"var4" receives an error from "var3"
+post/tests/test43/source.c:12:"var3" receives an error from "var2"
+post/tests/test43/source.c:6:"var2" receives an error from "var1"
+post/tests/test43/source.c:5:"var1" receives an error from "err"
+post/tests/test43/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+====

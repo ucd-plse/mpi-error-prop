@@ -1,0 +1,27 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test199/source.c:7: overwriting potential unchecked error in variable "ret"
+post/tests/test199/source.c:10:"ret" may have an unchecked error
+post/tests/test199/source.c:7:"ret" may have an unchecked error
+post/tests/test199/source.c:6:"ret" may have an unchecked error
+post/tests/test199/source.c:5:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test199/source.c:7: overwriting potential unchecked error in variable "ret"
+post/tests/test199/source.c:5:"ret" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test199/source.c:10: potential unchecked error in out of scope variable "ret"
+post/tests/test199/source.c:9:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test199/source.c:10: potential unchecked error in out of scope variable "ret"
+post/tests/test199/source.c:9:"ret" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test199/source.c:15: overwriting potential unchecked error in variable "x"
+post/tests/test199/source.c:14:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test199/source.c:15: overwriting potential unchecked error in variable "x"
+post/tests/test199/source.c:14:"x" receives an error from "TENTATIVE_EIO"
+====

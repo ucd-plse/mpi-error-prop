@@ -1,0 +1,49 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test184/source.c:17: overwriting potential unchecked error in variable "*px"
+post/tests/test184/source.c:17:"*px" may have an unchecked error
+post/tests/test184/source.c:16:"*px" receives an error from "x"
+post/tests/test184/source.c:16:"x" may have an unchecked error
+post/tests/test184/source.c:15:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test184/source.c:17: overwriting potential unchecked error in variable "*px"
+post/tests/test184/source.c:16:"*px" receives an error from "x"
+post/tests/test184/source.c:15:"x" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test184/source.c:28: potential unchecked error in out of scope pointer variable "px"
+post/tests/test184/source.c:26:"px" may have an unchecked error
+post/tests/test184/source.c:25:"px" may have an unchecked error
+post/tests/test184/source.c:23:"px" may have an unchecked error
+post/tests/test184/source.c:22:"px" may have an unchecked error
+post/tests/test184/source.c:19:"px" may have an unchecked error
+post/tests/test184/source.c:17:"px" may have an unchecked error
+post/tests/test184/source.c:17:"px" receives an error from "cabs2cil_"
+post/tests/test184/source.c:17:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test184/source.c:3: an unchecked error may be returned
+post/tests/test184/source.c:17:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test184/source.c:28: potential unchecked error in out of scope pointer variable "px"
+post/tests/test184/source.c:17:"px" receives an error from "cabs2cil_"
+post/tests/test184/source.c:17:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test184/source.c:3: an unchecked error may be returned
+post/tests/test184/source.c:17:"TENTATIVE_ENXIO" error is passed as argument
+====
+Error codes: *TENTATIVE_E2BIG 
+
+post/tests/test184/source.c:28: potential unchecked error in out of scope pointer variable "s"
+post/tests/test184/source.c:26:"s" may have an unchecked error
+post/tests/test184/source.c:25:"s" may have an unchecked error
+post/tests/test184/source.c:23:"s" may have an unchecked error
+post/tests/test184/source.c:23:"s" receives an error from "cabs2cil_"
+post/tests/test184/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test184/source.c:3: an unchecked error may be returned
+post/tests/test184/source.c:23:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test184/source.c:28: potential unchecked error in out of scope pointer variable "s"
+post/tests/test184/source.c:23:"s" receives an error from "cabs2cil_"
+post/tests/test184/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test184/source.c:3: an unchecked error may be returned
+post/tests/test184/source.c:23:"TENTATIVE_E2BIG" error is passed as argument
+====

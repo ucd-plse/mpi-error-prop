@@ -1,0 +1,24 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test103/source.c:7: potential unchecked error in out of scope variable "retval"
+post/tests/test103/source.c:7:"retval" may have an unchecked error
+post/tests/test103/source.c:6:"retval" may have an unchecked error
+post/tests/test103/source.c:5:"retval" may have an unchecked error
+post/tests/test103/source.c:3:"retval" receives an error from "TENTATIVE_EIO"
+
+post/tests/test103/source.c:7: potential unchecked error in out of scope variable "retval"
+post/tests/test103/source.c:3:"retval" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *ENXIO EIO 
+
+post/tests/test103/source.c:15: potential non-tentative unchecked error is not saved
+post/tests/test103/source.c:7: an unchecked error may be returned
+post/tests/test103/source.c:7:"cabs2cil_" receives an error from "err"
+post/tests/test103/source.c:7:"err" may have an unchecked error
+post/tests/test103/source.c:6:"err" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test103/source.c:15: potential non-tentative unchecked error is not saved
+post/tests/test103/source.c:7: an unchecked error may be returned
+post/tests/test103/source.c:7:"cabs2cil_" receives an error from "err"
+post/tests/test103/source.c:6:"err" receives an error from "TENTATIVE_ENXIO"
+====

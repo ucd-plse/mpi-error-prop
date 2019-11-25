@@ -1,0 +1,42 @@
+post/tests/test110/source.c:13: Handling error in variable main#err2, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:12:"err2" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:13: Handling error in variable main#err2, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:12:"err2" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test110/source.c:13: Handling error in variable main#err1, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:13:"err1" may have an unchecked error
+post/tests/test110/source.c:12:"err1" may have an unchecked error
+post/tests/test110/source.c:12:"err1" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:13: Handling error in variable main#err1, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:12:"err1" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test110/source.c:18: Handling error in variable main#err4, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:17:"err4" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:18: Handling error in variable main#err4, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:17:"err4" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test110/source.c:18: Handling error in variable main#err3, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:18:"err3" may have an unchecked error
+post/tests/test110/source.c:17:"err3" may have an unchecked error
+post/tests/test110/source.c:17:"err3" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:18: Handling error in variable main#err3, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:17:"err3" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test110/source.c:23: Handling error in variable main#err6, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:22:"err6" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:23: Handling error in variable main#err6, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:22:"err6" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test110/source.c:23: Handling error in variable main#err5, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:23:"err5" may have an unchecked error
+post/tests/test110/source.c:22:"err5" may have an unchecked error
+post/tests/test110/source.c:22:"err5" receives an error from "TENTATIVE_EIO"
+
+post/tests/test110/source.c:23: Handling error in variable main#err5, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test110/source.c:22:"err5" receives an error from "TENTATIVE_EIO"
+====

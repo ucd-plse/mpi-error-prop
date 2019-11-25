@@ -1,0 +1,20 @@
+Olf
+
+Computing points-to sets...
+x(2) -> a, b
+y(2) -> a, b
+tmp___0(2) -> a, b
+v(2) -> a, b
+tmp(2) -> a, b
+Total number of things pointed to: 10
+
+
+Golf
+
+Computing points-to sets...
+x(1) -> a
+y(1) -> b
+tmp___0(1) -> b
+v(2) -> a, b
+tmp(1) -> a
+Total number of things pointed to: 6

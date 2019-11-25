@@ -1,0 +1,14 @@
+post/tests/test137/source.c:4:TENTATIVE_EIO* returned from function foo
+====
+post/tests/test137/source.c:12:TENTATIVE_ENXIO* TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:7:"number" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test137/source.c:12:TENTATIVE_ENXIO* TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:7:"number" receives an error from "TENTATIVE_ENXIO"
+====
+post/tests/test137/source.c:12:TENTATIVE_ENXIO TENTATIVE_E2BIG* returned from function foo
+post/tests/test137/source.c:10:"number" receives an error from "TENTATIVE_E2BIG"
+
+post/tests/test137/source.c:12:TENTATIVE_ENXIO TENTATIVE_E2BIG* returned from function foo
+post/tests/test137/source.c:10:"number" receives an error from "TENTATIVE_E2BIG"
+====

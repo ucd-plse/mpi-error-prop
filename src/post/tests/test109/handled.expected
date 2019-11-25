@@ -1,0 +1,6 @@
+post/tests/test109/source.c:7: Handling error in variable main#err2, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test109/source.c:6:"err2" receives an error from "TENTATIVE_EIO"
+
+post/tests/test109/source.c:7: Handling error in variable main#err2, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test109/source.c:6:"err2" receives an error from "TENTATIVE_EIO"
+====

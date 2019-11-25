@@ -1,0 +1,145 @@
+post/tests/test183/source.c:28: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test183/source.c:27:"r" may have an unchecked error
+post/tests/test183/source.c:27:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:27:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:27:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test183/source.c:28: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test183/source.c:27:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:27:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:27:"TENTATIVE_EIO" error is passed as argument
+====
+post/tests/test183/source.c:29: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test183/source.c:28:"r" may have an unchecked error
+post/tests/test183/source.c:27:"r" may have an unchecked error
+post/tests/test183/source.c:27:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:27:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:27:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test183/source.c:29: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test183/source.c:27:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:27:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:27:"TENTATIVE_EIO" error is passed as argument
+====
+post/tests/test183/source.c:32: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test183/source.c:31:"r" may have an unchecked error
+post/tests/test183/source.c:31:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test183/source.c:32: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test183/source.c:31:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test183/source.c:33: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test183/source.c:32:"r" may have an unchecked error
+post/tests/test183/source.c:31:"r" may have an unchecked error
+post/tests/test183/source.c:31:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test183/source.c:33: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test183/source.c:31:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test183/source.c:37: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:36:"r" may have an unchecked error
+post/tests/test183/source.c:35:"r" may have an unchecked error
+post/tests/test183/source.c:35:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:35:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test183/source.c:37: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:35:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:35:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test183/source.c:37: Using variable main#s in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENOEXEC* 
+post/tests/test183/source.c:36:"s" may have an unchecked error
+post/tests/test183/source.c:36:"s" receives an error from "cabs2cil_"
+post/tests/test183/source.c:36:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:36:"TENTATIVE_ENOEXEC" error is passed as argument
+
+post/tests/test183/source.c:37: Using variable main#s in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_ENOEXEC* 
+post/tests/test183/source.c:36:"s" receives an error from "cabs2cil_"
+post/tests/test183/source.c:36:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:36:"TENTATIVE_ENOEXEC" error is passed as argument
+====
+post/tests/test183/source.c:40: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:39:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test183/source.c:40: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test183/source.c:43: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:42:"r" may have an unchecked error
+post/tests/test183/source.c:40:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test183/source.c:43: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test183/source.c:46: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:45:"r" may have an unchecked error
+post/tests/test183/source.c:43:"r" may have an unchecked error
+post/tests/test183/source.c:42:"r" may have an unchecked error
+post/tests/test183/source.c:40:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test183/source.c:46: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test183/source.c:49: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:48:"r" may have an unchecked error
+post/tests/test183/source.c:46:"r" may have an unchecked error
+post/tests/test183/source.c:45:"r" may have an unchecked error
+post/tests/test183/source.c:43:"r" may have an unchecked error
+post/tests/test183/source.c:42:"r" may have an unchecked error
+post/tests/test183/source.c:40:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" may have an unchecked error
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test183/source.c:49: Using variable main#r in pointer arithmetic, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test183/source.c:39:"r" receives an error from "cabs2cil_"
+post/tests/test183/source.c:39:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test183/source.c:16: an unchecked error may be returned
+post/tests/test183/source.c:39:"TENTATIVE_E2BIG" error is passed as argument
+====

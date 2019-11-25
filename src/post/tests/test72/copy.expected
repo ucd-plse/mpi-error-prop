@@ -1,0 +1,28 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test72/source.c:7: overwriting potential unchecked error in variable "error"
+post/tests/test72/source.c:6:"error" may have an unchecked error
+post/tests/test72/source.c:4:"error" may have an unchecked error
+post/tests/test72/source.c:3:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test72/source.c:7: overwriting potential unchecked error in variable "error"
+post/tests/test72/source.c:3:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test72/source.c:14: overwriting potential unchecked error in variable "error"
+post/tests/test72/source.c:12:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test72/source.c:14: overwriting potential unchecked error in variable "error"
+post/tests/test72/source.c:12:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test72/source.c:15: overwriting potential unchecked error in variable "error2"
+post/tests/test72/source.c:14:"error2" may have an unchecked error
+post/tests/test72/source.c:12:"error2" may have an unchecked error
+post/tests/test72/source.c:11:"error2" receives an error from "TENTATIVE_EIO"
+
+post/tests/test72/source.c:15: overwriting potential unchecked error in variable "error2"
+post/tests/test72/source.c:11:"error2" receives an error from "TENTATIVE_EIO"
+====

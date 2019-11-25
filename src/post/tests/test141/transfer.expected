@@ -1,0 +1,16 @@
+post/tests/test141/source.c:5:TENTATIVE_EIO* returned from function foo1_vn
+post/tests/test141/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test141/source.c:5:TENTATIVE_EIO* returned from function foo1_vn
+post/tests/test141/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test141/source.c:9:TENTATIVE_ENXIO* returned from function foo2
+====
+post/tests/test141/source.c:13:ENXIO* returned from function foo3_vn
+post/tests/test141/source.c:13:"cabs2cil_" receives an error from function "foo2"
+post/tests/test141/source.c:9: unchecked error "TENTATIVE_ENXIO" is returned
+
+post/tests/test141/source.c:13:ENXIO* returned from function foo3_vn
+post/tests/test141/source.c:13:"cabs2cil_" receives an error from function "foo2"
+post/tests/test141/source.c:9: unchecked error "TENTATIVE_ENXIO" is returned
+====

@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test207/source.c:8: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test207/source.c:7:"cabs2cil_" may have an unchecked error
+post/tests/test207/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test207/source.c:3: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test207/source.c:8: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test207/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test207/source.c:3: unchecked error "TENTATIVE_EIO" is returned
+====

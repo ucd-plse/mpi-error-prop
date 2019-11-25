@@ -1,0 +1,11 @@
+Error codes: *ENXIO EIO 
+
+post/tests/test219/source.c:30: potential non-tentative unchecked error in out of scope variable "err"
+post/tests/test219/source.c:28:"err" may have an unchecked error
+post/tests/test219/source.c:28:"err" receives an error from function "generic_error_remove_page2"
+post/tests/test219/source.c:10: unchecked error "TENTATIVE_ENXIO" is returned
+
+post/tests/test219/source.c:30: potential non-tentative unchecked error in out of scope variable "err"
+post/tests/test219/source.c:28:"err" receives an error from function "generic_error_remove_page2"
+post/tests/test219/source.c:10: unchecked error "TENTATIVE_ENXIO" is returned
+====

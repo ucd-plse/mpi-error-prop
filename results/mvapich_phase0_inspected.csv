@@ -1,0 +1,382 @@
+Id,Error Code,Call Sites to Dropping Function,Validity,Origin Site,Present in MPICH?,MPICH Location
+2,*MPI_ERR_OTHER,adio/common/ad_open.c:325,VALID,adio/common/cb_config_list.c:80,Yes,adio/common/ad_open.c:313
+3,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_fcntl.c:20,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_fcntl.c:17
+4,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_fcntl.c:28,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_fcntl.c:25
+5,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_getsh.c:34,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_getsh.c:35
+6,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_getsh.c:47,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_getsh.c:47
+7,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_getsh.c:67,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_getsh.c:66
+8,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_getsh.c:97,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_getsh.c:98
+9,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_iwrite.c:105,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_iwrite.c:115
+10,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_iwrite.c:92,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_iwrite.c:97
+11,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_iwrite.c:93,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_iwrite.c:99
+12,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:233,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:221
+13,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:242,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:231
+14,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:250,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:240
+15,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:258,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:249
+16,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:263,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:253
+17,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:33,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:39
+18,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:34,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:41
+19,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:392,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:381
+20,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:406,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:396
+21,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:414,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:405
+22,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:42,VALID,adio/common/lock.c:177,No,
+23,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:438,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:430
+24,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:483,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:472
+25,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:527,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_read.c:515
+26,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:58,VALID,adio/common/lock.c:177,No,
+27,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:59,VALID,adio/common/lock.c:177,No,
+28,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_read.c:67,VALID,adio/common/lock.c:177,*MISSING,adio/ad_nfs/ad_nfs_read.c:56
+29,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_setsh.c:49,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_setsh.c:50
+30,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_setsh.c:64,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_setsh.c:65
+31,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:32,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:42
+32,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:336,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:323
+33,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:343,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:330
+34,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:355,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:342
+35,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:363,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:351
+36,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:367,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:356
+37,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:40,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:57
+38,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:493,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:486
+39,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:499,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:494
+40,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:543,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:539
+41,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:55,VALID,adio/common/lock.c:177,No,
+42,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:588,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:581
+43,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:63,VALID,adio/common/lock.c:177,No,
+44,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:640,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:634
+45,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:650,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:644
+46,*MPI_ERR_UNKNOWN,adio/ad_nfs/ad_nfs_write.c:651,VALID,adio/common/lock.c:177,Yes,adio/ad_nfs/ad_nfs_write.c:646
+47,*MPI_ERR_UNKNOWN,adio/common/ad_get_sh_fp.c:49,VALID,adio/common/lock.c:177,Yes,adio/common/ad_get_sh_fp.c:48
+48,*MPI_ERR_UNKNOWN,adio/common/ad_get_sh_fp.c:57,VALID,adio/common/lock.c:177,Yes,adio/common/ad_get_sh_fp.c:55
+49,*MPI_ERR_UNKNOWN,adio/common/ad_get_sh_fp.c:61,VALID,adio/common/lock.c:177,Yes,adio/common/ad_get_sh_fp.c:59
+50,*MPI_ERR_UNKNOWN,adio/common/ad_get_sh_fp.c:73,VALID,adio/common/lock.c:177,Yes,adio/common/ad_get_sh_fp.c:73
+51,*MPI_ERR_UNKNOWN,adio/common/ad_read_str_naive.c:103,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str_naive.c:98
+52,*MPI_ERR_UNKNOWN,adio/common/ad_read_str_naive.c:224,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str_naive.c:212
+53,*MPI_ERR_UNKNOWN,adio/common/ad_read_str_naive.c:364,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str_naive.c:348
+54,*MPI_ERR_UNKNOWN,adio/common/ad_read_str_naive.c:71,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str_naive.c:69
+55,*MPI_ERR_UNKNOWN,adio/common/ad_read_str.c:131,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str.c:126
+56,*MPI_ERR_UNKNOWN,adio/common/ad_read_str.c:149,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str.c:143
+57,*MPI_ERR_UNKNOWN,adio/common/ad_read_str.c:271,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str.c:263
+58,*MPI_ERR_UNKNOWN,adio/common/ad_read_str.c:386,VALID,adio/common/lock.c:177,Yes,adio/common/ad_read_str.c:376
+59,*MPI_ERR_UNKNOWN,adio/common/ad_set_sh_fp.c:40,VALID,adio/common/lock.c:177,Yes,adio/common/ad_set_sh_fp.c:40
+60,*MPI_ERR_UNKNOWN,adio/common/ad_set_sh_fp.c:43,VALID,adio/common/lock.c:177,Yes,adio/common/ad_set_sh_fp.c:43
+61,*MPI_ERR_UNKNOWN,adio/common/ad_write_str_naive.c:104,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str_naive.c:99
+62,*MPI_ERR_UNKNOWN,adio/common/ad_write_str_naive.c:224,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str_naive.c:212
+63,*MPI_ERR_UNKNOWN,adio/common/ad_write_str_naive.c:363,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str_naive.c:345
+64,*MPI_ERR_UNKNOWN,adio/common/ad_write_str_naive.c:72,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str_naive.c:72
+65,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:196,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:191
+66,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:214,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:207
+67,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:343,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:334
+68,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:370,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:361
+69,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:415,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:403
+70,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:464,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:452
+71,*MPI_ERR_UNKNOWN,adio/common/ad_write_str.c:468,VALID,adio/common/lock.c:177,Yes,adio/common/ad_write_str.c:457
+72,*MPI_ERR_UNKNOWN,mpi-io/iread_sh.c:109,VALID,adio/common/lock.c:177,Yes,mpi-io/iread_sh.c:104
+73,*MPI_ERR_UNKNOWN,mpi-io/iread_sh.c:117,VALID,adio/common/lock.c:177,Yes,mpi-io/iread_sh.c:111
+74,*MPI_ERR_UNKNOWN,mpi-io/iread.c:137,VALID,adio/common/lock.c:177,Yes,mpi-io/iread.c:133
+75,*MPI_ERR_UNKNOWN,mpi-io/iread.c:145,VALID,adio/common/lock.c:177,Yes,mpi-io/iread.c:140
+76,*MPI_ERR_UNKNOWN,mpi-io/iwrite_sh.c:101,VALID,adio/common/lock.c:177,Yes,mpi-io/iwrite_sh.c:102
+77,*MPI_ERR_UNKNOWN,mpi-io/iwrite_sh.c:107,VALID,adio/common/lock.c:177,Yes,mpi-io/iwrite_sh.c:108
+78,*MPI_ERR_UNKNOWN,mpi-io/iwrite.c:143,VALID,adio/common/lock.c:177,Yes,mpi-io/iwrite.c:135
+79,*MPI_ERR_UNKNOWN,mpi-io/iwrite.c:151,VALID,adio/common/lock.c:177,Yes,mpi-io/iwrite.c:142
+80,*MPI_ERR_UNKNOWN,mpi-io/read_sh.c:126,VALID,adio/common/lock.c:177,Yes,mpi-io/read_sh.c:123
+81,*MPI_ERR_UNKNOWN,mpi-io/read_sh.c:132,VALID,adio/common/lock.c:177,Yes,mpi-io/read_sh.c:129
+82,*MPI_ERR_UNKNOWN,mpi-io/read.c:154,VALID,adio/common/lock.c:177,Yes,mpi-io/read.c:144
+83,*MPI_ERR_UNKNOWN,mpi-io/read.c:161,VALID,adio/common/lock.c:177,Yes,mpi-io/read.c:150
+84,*MPI_ERR_UNKNOWN,mpi-io/write_sh.c:125,VALID,adio/common/lock.c:177,Yes,mpi-io/write_sh.c:123
+85,*MPI_ERR_UNKNOWN,mpi-io/write_sh.c:131,VALID,adio/common/lock.c:177,Yes,mpi-io/write_sh.c:129
+86,*MPI_ERR_UNKNOWN,mpi-io/write.c:156,VALID,adio/common/lock.c:177,Yes,mpi-io/write.c:148
+87,*MPI_ERR_UNKNOWN,mpi-io/write.c:164,VALID,adio/common/lock.c:177,Yes,mpi-io/write.c:154
+88,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/comm/comm_split.c:769,VALID,src/mpi/coll/helper_fns.c:85,No,
+89,*MPI_ERR_OTHER,./src/mpid/ch3/include/mpidrma.h:910,VALID,src/mpid/ch3/src/ch3u_request.c:862,Yes,./src/mpid/ch3/include/mpidrma.h:760
+90,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:299,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1144,No,
+91,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:372,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1144,No,
+92,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:705,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1144,No,
+93,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:763,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1144,No,
+94,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_recv_req.c:1153,MAYBE,src/mpid/ch3/src/ch3u_handle_recv_req.c:1450,Yes,src/mpid/ch3/src/ch3u_handle_recv_req.c:878
+95,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_recv_req.c:717,MAYBE,src/mpid/ch3/src/ch3u_handle_recv_req.c:1450,Yes,src/mpid/ch3/src/ch3u_handle_recv_req.c:574
+96,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_recv_req.c:827,MAYBE,src/mpid/ch3/src/ch3u_handle_recv_req.c:1450,Yes,src/mpid/ch3/src/ch3u_handle_recv_req.c:642
+97,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_recv_req.c:992,MAYBE,src/mpid/ch3/src/ch3u_handle_recv_req.c:1450,Yes,src/mpid/ch3/src/ch3u_handle_recv_req.c:763
+98,*MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1881,VALID,src/mpi/comm/create_2level_comm.c:1351,No,
+99,*MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1913,VALID,src/mpi/comm/create_2level_comm.c:1351,No,
+100,*MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1886,VALID,src/mpi/comm/create_2level_comm.c:1384,No,
+101,*MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1931,VALID,src/mpi/comm/create_2level_comm.c:1384,No,
+102,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:795,VALID,src/mpid/ch3/src/mpidi_pg.c:469,Yes,src/mpid/ch3/src/ch3u_port.c:1075
+103,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:1043,VALID,src/mpid/ch3/src/ch3u_comm.c:333,No,
+104,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:1127,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_smp_progress.c:3276,Yes,src/mpid/ch3/src/ch3u_port.c:1404
+105,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:529,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_smp_progress.c:3276,Yes,src/mpid/ch3/src/ch3u_port.c:804
+106,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1002,VALID,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2295,No,
+107,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:978,VALID,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2356,No,
+108,*MPI_ERR_OTHER,./src/mpid/ch3/include/mpid_rma_issue.h:963,VALID,./src/mpid/ch3/include/mpid_rma_issue.h:127,Yes,./src/mpid/ch3/include/mpid_rma_issue.h:586
+109,*MPI_ERR_OTHER,./src/mpid/ch3/include/mpid_rma_issue.h:1203,VALID,./src/mpid/ch3/include/mpid_rma_issue.h:127,Yes,./src/mpid/ch3/include/mpid_rma_issue.h:806
+110,*MPI_ERR_OTHER,./src/mpid/ch3/include/mpid_rma_issue.h:1209,VALID,./src/mpid/ch3/include/mpid_rma_issue.h:127,Yes,./src/mpid/ch3/include/mpid_rma_issue.h:812
+111,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:1021,VALID,src/mpi/coll/helper_fns.c:783,Yes,src/mpid/ch3/channels/mrail/src/gen2/ibv_rndv.c
+112,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:984,VALID,src/mpi/coll/helper_fns.c:783,"Function present, different occurrence",
+113,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:145,VALID,src/mpi/coll/helper_fns.c:783,"Function present, different occurrence",
+114,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:276,VALID,src/mpi/coll/helper_fns.c:783,"Function present, different occurrence",
+115,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1111,VALID,src/mpi/coll/helper_fns.c:783,"Function present, different occurrence",
+116,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1280,VALID,src/mpi/coll/helper_fns.c:783,"Function present, different occurrence",
+117,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:1028,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+118,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:991,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+119,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:147,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+120,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:278,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+121,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1113,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+122,*MPI_ERR_COUNT MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1282,VALID,src/mpi/coll/helper_fns.c:703,"Function present, different occurrence",
+123,*MPI_ERR_TRUNCATE MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:149,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+124,*MPI_ERR_TRUNCATE MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:280,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+125,*MPI_ERR_TRUNCATE MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1115,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+126,*MPI_ERR_TRUNCATE MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1284,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+127,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_init.c:1947,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2289,No,
+128,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_init.c:802,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2289,No,
+129,*MPI_ERR_OTHER,src/mpi/pt2pt/recv.c:171,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+130,*MPI_ERR_OTHER,src/mpi/pt2pt/sendrecv.c:198,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+131,*MPI_ERR_OTHER,src/mpi/pt2pt/sendrecv.c:203,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_istartmsg.c:186,Yes,src/mpi/pt2pt/sendrecv.c:202
+132,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/comm/comm_shrink.c:65,VALID,src/mpi/coll/helper_fns.c:413,Yes,src/mpi/comm/comm_shrink.c:66
+133,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:657,VALID,src/mpi/coll/helper_fns.c:413,Yes,src/mpid/ch3/src/mpid_vc.c:823
+134,*MPI_ERR_OTHER,src/mpi/pt2pt/greq_complete.c:40,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+135,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isend.c:149,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+136,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isendv.c:362,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+137,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_packetizedtransfer.c:129,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+138,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_packetizedtransfer.c:165,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+139,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1143,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+140,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:566,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+141,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:685,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+142,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/mpid_mrail_rndv.c:162,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+143,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_eager.c:830,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+144,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_eager.c:883,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+145,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_recvq.c:637,VALID,src/mpid/ch3/src/ch3u_request.c:862,Yes,src/mpid/ch3/src/ch3u_recvq.c:631
+146,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_recvq.c:910,VALID,src/mpid/ch3/src/ch3u_request.c:862,Yes,src/mpid/ch3/src/ch3u_recvq.c:895
+147,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rma_pkthandler.c:2171,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+148,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rndv.c:624,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+149,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/common/datatype/dataloop/dataloop_create.c:339,VALID,src/mpid/common/datatype/dataloop/darray_support.c:194,No,
+150,*MPI_ERR_OTHER,src/mpid/common/datatype/dataloop/dataloop_create.c:321,VALID,src/mpid/common/datatype/mpid_datatype_contents.c:66,No,
+151,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rma_pkthandler.c:2400,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+152,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1478,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+153,*MPI_ERR_INTERN,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:841,VALID,src/mpid/ch3/src/ch3u_handle_recv_pkt.c:767,No,
+154,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_rndv.c:348,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+155,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_rndv.c:375,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+156,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1493,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:1012,No,
+157,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_smp_progress.c:667,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:1012,No,
+158,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1489,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+159,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:1233,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+160,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1482,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+161,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_contigsend.c:175,MAYBE,src/mpid/ch3/channels/mrail/src/rdma/ch3_contigsend.c:140,No,
+162,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:377,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_istartmsg.c:186,No,
+163,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:720,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_init.c:626,Yes,src/mpid/ch3/src/mpid_vc.c:870
+164,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1307,VALID,src/mpid/ch3/src/ch3u_port.c:1300,No,
+165,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1638,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+166,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1676,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+167,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1713,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+168,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1745,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+169,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1774,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+170,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1865,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+171,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1903,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+172,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1941,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+173,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1968,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+174,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2323,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+175,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2384,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+176,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:679,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+177,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:714,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+178,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:755,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+179,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:800,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+180,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isend.c:91,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+181,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isendv.c:231,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+182,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_istartmsg.c:150,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2639,No,
+183,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_init.c:1868,VALID,src/mpid/ch3/channels/common/src/cm/cm.c:2822,No,
+184,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_init.c:785,VALID,src/mpi/coll/helper_fns.c:85,No,
+185,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_finalize.c:38,VALID,src/mpi/coll/helper_fns.c:85,No,
+186,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1503,VALID,src/mpi/coll/helper_fns.c:85,No,
+187,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1546,VALID,src/mpi/coll/helper_fns.c:85,No,
+188,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1605,VALID,src/mpi/coll/helper_fns.c:85,No,
+189,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1642,VALID,src/mpi/coll/helper_fns.c:85,No,
+190,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1743,VALID,src/mpi/coll/helper_fns.c:85,No,
+191,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1807,VALID,src/mpi/coll/helper_fns.c:85,No,
+192,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:1840,VALID,src/mpi/coll/helper_fns.c:85,No,
+193,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/ch3_shmem_coll.c:3581,VALID,src/mpi/coll/helper_fns.c:85,No,
+194,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/pt2pt/request_free.c:124,VALID,src/mpi/coll/helper_fns.c:85,No,
+195,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/common/src/cm/cm.c:2266,VALID,src/mpi/coll/helper_fns.c:85,No,
+196,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:561,VALID,src/mpi/coll/helper_fns.c:85,No,
+197,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_init.c:796,VALID,src/mpi/coll/helper_fns.c:85,No,
+198,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:112,VALID,src/mpi/coll/helper_fns.c:85,Yes,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:102
+199,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/mpid_isend.c:221,VALID,src/mpi/coll/helper_fns.c:85,No,
+200,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/mpid_isend.c:337,VALID,src/mpi/coll/helper_fns.c:85,No,
+201,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/mpid_isend.c:354,VALID,src/mpi/coll/helper_fns.c:85,No,
+202,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rma_sync.c:938,VALID,src/mpi/coll/helper_fns.c:85,No,
+203,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_init.c:401,INVALID,src/mpid/ch3/channels/common/src/affinity/hwloc_bind.c:2103,No,N/A
+204,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_win_fns.c:1017,VALID,./src/mpid/ch3/channels/mrail/include/mpidi_ch3_impl.h:700,No,
+205,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_failure_ack.c:25,VALID,src/mpid/ch3/src/ch3u_handle_connection.c:179,Yes,src/mpid/ch3/src/mpid_comm_failure_ack.c:25
+206,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_failure_ack.c:51,VALID,src/mpid/ch3/src/ch3u_handle_connection.c:179,Yes,src/mpid/ch3/src/mpid_comm_failure_ack.c:54
+207,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:115,VALID,src/mpid/ch3/src/ch3u_handle_connection.c:179,Yes,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:105
+208,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_connection.c:679,VALID,src/mpid/ch3/src/ch3u_handle_connection.c:613,Yes,src/mpid/ch3/src/ch3u_handle_connection.c:556
+209,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_failure_ack.c:52,MAYBE,src/mpid/ch3/src/ch3u_handle_connection.c:613,Yes,src/mpid/ch3/src/mpid_comm_failure_ack.c:55
+210,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_send.c:1590,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+211,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_send.c:1649,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+212,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_send.c:1679,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+213,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_send.c:1776,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+214,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isend.c:125,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+215,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isendv.c:134,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+216,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_isendv.c:339,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+217,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_packetizedtransfer.c:174,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+218,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_packetizedtransfer.c:186,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+219,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_progress.c:1123,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+220,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:1008,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+221,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:581,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+222,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:702,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+223,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_rndvtransfer.c:720,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+224,*MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_smp_progress.c:578,VALID,src/mpid/ch3/src/ch3u_request.c:862,No,
+225,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rma_pkthandler.c:380,VALID,src/mpid/ch3/src/ch3u_handle_recv_pkt.c:587,No,
+226,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:254,VALID,src/mpid/ch3/channels/mrail/src/rdma/ch3_istartmsg.c:186,Yes,src/mpid/ch3/src/mpid_vc.c:195
+227,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:843,VALID,src/mpid/ch3/src/mpidi_pg.c:195,Yes,src/mpid/ch3/src/ch3u_port.c:1123
+228,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_handle_connection.c:209,VALID,src/mpid/ch3/src/mpidi_pg.c:359,Yes,src/mpid/ch3/src/ch3u_handle_connection.c:180
+229,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:218,VALID,src/mpid/ch3/src/mpidi_pg.c:359,Yes,src/mpid/ch3/src/mpid_vc.c:185
+230,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:261,VALID,src/mpid/ch3/src/mpidi_pg.c:359,Yes,src/mpid/ch3/src/mpid_vc.c:202
+231,*MPI_ERR_OTHER,src/mpid/ch3/src/mpidi_pg.c:132,VALID,src/mpid/ch3/src/mpidi_pg.c:359,Yes,src/mpid/ch3/src/mpidi_pg.c:126
+232,*MPI_ERR_OTHER,src/mpid/ch3/src/mpidi_pg.c:143,VALID,src/mpid/ch3/src/mpidi_pg.c:359,Yes,src/mpid/ch3/src/mpidi_pg.c:137
+233,*MPI_ERR_OTHER,src/mpi/comm/comm_split.c:759,VALID,src/mpid/ch3/src/mpid_vc.c:110,No,
+234,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_comm.c:157,VALID,src/mpid/ch3/src/mpid_vc.c:110,Yes,src/mpid/ch3/src/ch3u_comm.c:157
+235,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_vc.c:530,VALID,src/mpid/ch3/src/mpid_vc.c:110,Yes,src/mpid/ch3/src/mpid_vc.c:696
+236,*MPI_ERR_ARG,adio/common/ad_darray.c:108,VALID,adio/common/ad_darray.c:168,Yes,adio/common/ad_darray.c:100
+237,*MPI_ERR_ARG,adio/common/ad_darray.c:52,VALID,adio/common/ad_darray.c:168,Yes,adio/common/ad_darray.c:49
+238,*MPI_ERR_ARG,adio/common/ad_darray.c:68,VALID,adio/common/ad_darray.c:168,Yes,adio/common/ad_darray.c:62
+239,*MPI_ERR_ARG,adio/common/ad_darray.c:94,VALID,adio/common/ad_darray.c:168,Yes,adio/common/ad_darray.c:88
+240,*MPI_ERR_ARG,adio/common/ad_darray.c:100,MAYBE,adio/common/ad_darray.c:227,Yes,adio/common/ad_darray.c:93
+241,*MPI_ERR_ARG,adio/common/ad_darray.c:60,MAYBE,adio/common/ad_darray.c:227,Yes,adio/common/ad_darray.c:55
+242,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/allgather_osu.c:2315,VALID,src/mpi/coll/helper_fns.c:85,No,
+243,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/allgather_osu.c:2643,VALID,src/mpi/coll/helper_fns.c:85,No,
+244,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/allreduce_osu.c:2777,VALID,src/mpi/coll/helper_fns.c:85,No,
+245,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/allreduce_osu.c:2780,VALID,src/mpi/coll/helper_fns.c:85,No,
+246,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/comm/comm_agree.c:78,VALID,src/mpi/coll/helper_fns.c:85,Yes,src/mpi/comm/comm_agree.c:82
+247,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/comm/contextid.c:786,VALID,src/mpi/coll/helper_fns.c:85,No,
+248,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_rma_sync.c:610,VALID,src/mpi/coll/helper_fns.c:533,No,
+249,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:420,VALID,src/mpi/coll/helper_fns.c:413,No,
+250,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:2776,VALID,src/mpi/coll/helper_fns.c:85,No,
+251,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:3050,VALID,src/mpi/coll/helper_fns.c:85,No,
+252,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/allreduce_osu.c:1851,VALID,src/mpi/coll/helper_fns.c:85,No,
+253,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:1066,VALID,src/mpi/coll/helper_fns.c:85,No,
+254,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:920,VALID,src/mpi/coll/helper_fns.c:85,No,
+255,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:969,VALID,src/mpi/coll/helper_fns.c:85,No,
+256,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/pt2pt/bsendutil.c:300,VALID,src/mpi/coll/helper_fns.c:85,Yes,src/mpi/pt2pt/bsendutil.c:312
+257,*MPI_ERR_OTHER,src/mpi/pt2pt/bsendutil.c:634,VALID,src/mpi/pt2pt/bsendutil.c:173,Yes,src/mpi/pt2pt/bsendutil.c:645
+258,*MPI_ERR_OTHER,src/mpi/comm/comm_agree.c:44,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpi/comm/comm_agree.c:44
+259,*MPI_ERR_OTHER,src/mpi/comm/comm_shrink.c:60,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpi/comm/comm_shrink.c:61
+260,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_failure_ack.c:58,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpid/ch3/src/mpid_comm_failure_ack.c:61
+261,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:73,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:63
+262,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:243,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:201
+263,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:830,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:605
+264,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:832,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:607
+265,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:850,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:626
+266,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:931,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:705
+267,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:933,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:707
+268,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:937,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/commutil.c:711
+269,*MPI_ERR_OTHER,src/mpi/comm/intercomm_create.c:340,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/intercomm_create.c:135
+270,*MPI_ERR_OTHER,src/mpi/comm/intercomm_merge.c:47,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/intercomm_merge.c:48
+271,*MPI_ERR_OTHER,src/mpi/comm/intercomm_merge.c:49,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/intercomm_merge.c:50
+272,*MPI_ERR_OTHER,src/mpi/comm/intercomm_merge.c:56,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/intercomm_merge.c:56
+273,*MPI_ERR_OTHER,src/mpi/comm/intercomm_merge.c:61,VALID,src/mpi/comm/commutil.c:528,Yes,src/mpi/comm/intercomm_merge.c:61
+274,*MPI_ERR_OTHER,src/mpi/comm/comm_create.c:186,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/comm_create.c:166
+275,*MPI_ERR_OTHER,src/mpi/comm/comm_create.c:189,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/comm_create.c:169
+276,*MPI_ERR_OTHER,src/mpi/comm/comm_split.c:1073,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/comm_split.c:328
+277,*MPI_ERR_OTHER,src/mpi/comm/comm_split.c:1098,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/comm_split.c:352
+278,*MPI_ERR_OTHER,src/mpi/comm/comm_split.c:1116,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/comm_split.c:368
+279,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:663,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/commutil.c:426
+280,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:696,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/commutil.c:463
+281,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:838,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/commutil.c:612
+282,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:840,VALID,src/mpi/comm/commutil.c:494,Yes,src/mpi/comm/commutil.c:615
+283,*MPI_ERR_OTHER,src/mpi/comm/comm_shrink.c:78,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpi/comm/comm_shrink.c:83
+284,*MPI_ERR_OTHER,src/mpi/comm/comm_shrink.c:88,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpi/comm/comm_shrink.c:93
+285,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:1032,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpi/comm/commutil.c:800
+286,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:1047,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpi/comm/commutil.c:810
+287,*MPI_ERR_OTHER,src/mpi/comm/commutil.c:1049,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpi/comm/commutil.c:812
+288,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:1114,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/ch3/src/ch3u_port.c:1391
+289,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_port.c:518,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/ch3/src/ch3u_port.c:793
+290,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_request.c:237,VALID,src/mpid/ch3/src/ch3u_comm.c:333,No,
+291,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_revoke.c:78,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/ch3/src/mpid_comm_revoke.c:78
+292,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_revoke.c:97,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/ch3/src/mpid_comm_revoke.c:97
+293,*MPI_ERR_OTHER,src/mpid/common/sched/mpid_sched.c:883,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/common/sched/mpidu_sched.c:928
+294,*MPI_ERR_OTHER,src/mpid/common/sched/mpid_sched.c:903,VALID,src/mpid/ch3/src/ch3u_comm.c:333,Yes,src/mpid/common/sched/mpidu_sched.c:950
+295,*MPI_ERR_OTHER,src/mpi/init/initthread.c:449,MAYBE,src/mpid/common/datatype/mpid_type_create_pairtype.c:112,No,
+296,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/datatype/type_set_name.c:100,VALID,src/mpi/datatype/typeutil.c:258,Yes,src/mpi/datatype/type_set_name.c:103
+297,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:85,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpid/ch3/src/mpid_comm_get_all_failed_procs.c:75
+298,*MPI_ERR_OTHER,src/mpid/ch3/src/mpid_comm_failure_ack.c:61,VALID,src/mpi/group/grouputil.c:79,Yes,src/mpid/ch3/src/mpid_comm_failure_ack.c:64
+299,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_comm_spawn_multiple.c:73,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_comm_spawn_multiple.c:66
+300,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:337,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:330
+301,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:349,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:342
+302,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:364,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:357
+303,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:377,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:370
+304,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:410,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:403
+305,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:422,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:415
+306,*MPI_ERR_INFO_VALUE,src/mpid/ch3/src/ch3u_win_fns.c:434,VALID,src/mpi/info/info_get.c:56,Yes,src/mpid/ch3/src/ch3u_win_fns.c:427
+307,*MPI_ERR_OTHER,src/mpi/info/info_set.c:104,VALID,src/mpi/info/infoutil.c:61,No,
+308,*MPI_ERR_OTHER,src/mpid/ch3/src/ch3u_win_fns.c:497,VALID,src/mpi/info/infoutil.c:61,Yes,src/mpid/ch3/src/ch3u_win_fns.c:490
+309,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/alltoall_osu.c:1252,VALID,src/mpi/coll/helper_fns.c:85,No,
+310,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/alltoall_osu.c:377,VALID,src/mpi/coll/helper_fns.c:85,No,
+311,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:135,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+312,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:153,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+313,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:266,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+314,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_block_osu.c:284,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+315,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1101,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+316,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1119,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+317,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1270,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+318,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/red_scat_osu.c:1288,VALID,src/mpi/coll/helper_fns.c:85,"Function present, different occurrence",
+319,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_IN_STATUS MPI_ERR_ARG MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_REQUEST MPI_ERR_OTHER,src/mpi/coll/reduce_osu.c:2036,VALID,src/mpi/coll/helper_fns.c:85,No,
+320,*MPI_ERR_FILE,src/mpi/errhan/file_call_errhandler.c:76,MAYBE,mpi-io/mpich_fileutil.c:48,Yes,src/mpi/errhan/file_call_errhandler.c:71
+321,*MPI_ERR_FILE,src/mpi/errhan/file_get_errhandler.c:87,MAYBE,mpi-io/mpich_fileutil.c:48,Yes,src/mpi/errhan/file_get_errhandler.c:83
+322,*MPI_ERR_FILE,src/mpi/errhan/file_set_errhandler.c:107,MAYBE,mpi-io/mpich_fileutil.c:48,Yes,src/mpi/errhan/file_set_errhandler.c:105
+323,*MPI_ERR_FILE,src/mpi/errhan/file_set_errhandler.c:126,MAYBE,mpi-io/mpich_fileutil.c:30,Yes,src/mpi/errhan/file_set_errhandler.c:123
+324,*MPI_ERR_OTHER,src/mpi/coll/allgather.c:708,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/allgather/allgather_inter_local_gather_remote_bcast.c:56
+325,*MPI_ERR_OTHER,src/mpi/coll/allreduce.c:673,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/allreduce/allreduce_inter_reduce_exchange_bcast.c:47
+326,*MPI_ERR_OTHER,src/mpi/coll/bcast.c:1410,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/bcast/bcast_inter_remote_send_local_bcast.c:69
+327,*MPI_ERR_OTHER,src/mpi/coll/iallgather.c:525,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/iallgather/iallgather_inter_local_gather_remote_bcast.c:53
+328,*MPI_ERR_OTHER,src/mpi/coll/iallreduce.c:551,VALID,src/mpi/comm/commutil.c:318,No,
+329,*MPI_ERR_OTHER,src/mpi/coll/iscatter.c:505,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/iscatter/iscatter_inter_remote_send_local_scatter.c:79
+330,*MPI_ERR_OTHER,src/mpi/coll/red_scat_block.c:965,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/init/initthread.c
+331,*MPI_ERR_OTHER,src/mpi/coll/scatter_osu.c:2018,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/reduce_scatter_block/reduce_scatter_block_inter_remote_reduce_local_scatter.c:113
+332,*MPI_ERR_OTHER,src/mpi/coll/scatter.c:524,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/coll/scatter/scatter_inter_remote_send_local_scatter.c:93
+333,*MPI_ERR_OTHER,src/mpi/comm/comm_create.c:327,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/comm/comm_create.c:306
+334,*MPI_ERR_OTHER,src/mpi/comm/comm_split.c:913,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/comm/comm_split.c:157
+335,*MPI_ERR_OTHER,src/mpi/comm/intercomm_merge.c:300,VALID,src/mpi/comm/commutil.c:318,Yes,src/mpi/comm/intercomm_merge.c:303
+336,*MPI_ERR_OTHER,src/mpi_t/mpit_initthread.c:64,MAYBE,src/util/cvar/mpich_cvars.c:405,No,
+337,*MPI_ERR_OTHER,src/mpi/coll/gather.c:350,VALID,src/mpid/common/datatype/mpid_datatype_contents.c:66,Yes,src/mpi/coll/gather/gather_intra_binomial.c:278
+338,*MPI_ERR_OTHER,src/mpi/coll/igather.c:250,VALID,src/mpid/common/datatype/mpid_datatype_contents.c:66,Yes,src/mpi/coll/igather/igather_intra_binomial.c:233
+339,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/pt2pt/bsendutil.c:182,VALID,src/mpi/coll/helper_fns.c:85,No,
+340,*MPI_ERR_INTERN MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_channel_manager.c:589,INVALID,src/mpid/ch3/src/ch3u_handle_connection.c:179,No,
+341,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:802,VALID,src/mpi/coll/iallgather_tuning.c:366,No,
+342,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:814,VALID,src/mpi/coll/iallgatherv_tuning.c:366,No,
+343,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:755,VALID,src/mpi/coll/iallreduce_tuning.c:366,No,
+344,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:778,VALID,src/mpi/coll/ialltoall_tuning.c:372,No,
+345,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:790,VALID,src/mpi/coll/ialltoallv_tuning.c:314,No,
+346,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:744,VALID,src/mpi/coll/ibarrier_tuning.c:316,No,
+347,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:700,VALID,src/mpi/coll/ibcast_tuning.c:382,No,
+348,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:711,VALID,src/mpi/coll/igather_tuning.c:318,No,
+349,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:733,VALID,src/mpi/coll/ireduce_tuning.c:363,No,
+350,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:766,VALID,src/mpi/coll/ired_scat_tuning.c:331,No,
+351,*MPI_ERR_INTERN,src/mpi/coll/ch3_shmem_coll.c:722,VALID,src/mpi/coll/iscatter_tuning.c:316,No,
+352,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/ibv_env_params.c:2524,VALID,src/mpi/coll/helper_fns.c:85,No,
+353,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpi/coll/bcast_osu.c:1197,VALID,src/mpi/coll/helper_fns.c:85,No,
+354,*MPI_ERR_TRUNCATE MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/src/mpid_init.c:652,VALID,src/mpi/coll/helper_fns.c:85,No,
+355,*MPI_ERR_ARG MPI_ERR_OTHER,adio/common/ad_end.c:19,VALID,src/mpi/errhan/file_set_errhandler.c:95,Yes,adio/common/ad_end.c:18
+356,*MPI_ERR_INFO,adio/common/system_hints.c:170,MAYBE,src/mpi/info/info_getn.c:103,Yes,adio/common/system_hints.c:169
+357,*MPI_ERR_INFO,adio/common/system_hints.c:184,MAYBE,src/mpi/info/info_getn.c:103,Yes,adio/common/system_hints.c:183
+358,*MPI_ERR_INFO,adio/common/system_hints.c:47,MAYBE,src/mpi/info/info_getn.c:103,Yes,adio/common/system_hints.c:47
+359,*MPI_ERR_ARG,mpi-io/mpir-mpioinit.c:27,INVALID,src/mpi/init/initialized.c:62,Yes,mpi-io/mpir-mpioinit.c:28
+360,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/ad_io_coll.c:1050,VALID,src/mpi/pt2pt/mpir_request.c:497,No,
+361,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/p2p_aggregation.c:305,VALID,src/mpi/pt2pt/mpir_request.c:497,"Yes, but missing error report",
+362,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/p2p_aggregation.c:360,VALID,src/mpi/pt2pt/mpir_request.c:497,"Yes, but missing error report",
+363,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/p2p_aggregation.c:380,VALID,src/mpi/pt2pt/mpir_request.c:497,"Yes, but missing error report",
+364,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/p2p_aggregation.c:870,VALID,src/mpi/pt2pt/mpir_request.c:497,"Yes, but missing error report",
+365,*MPI_ERR_INTERN MPI_ERR_OTHER,adio/common/p2p_aggregation.c:878,VALID,src/mpi/pt2pt/mpir_request.c:497,"Yes, but missing error report",
+366,*MPI_ERR_OTHER,adio/ad_nfs/ad_nfs_iwrite.c:126,VALID,src/mpi/pt2pt/greq_start.c:88,No,
+367,*MPI_ERR_OTHER,adio/common/ad_iread_coll.c:236,VALID,src/mpi/pt2pt/greq_start.c:88,Yes,adio/common/ad_iread_coll.c:234
+368,*MPI_ERR_OTHER,adio/common/ad_iwrite_coll.c:259,VALID,src/mpi/pt2pt/greq_start.c:88,Yes,adio/common/ad_iwrite_coll.c:257
+369,*MPI_ERR_OTHER,adio/common/ad_iwrite.c:177,VALID,src/mpi/pt2pt/greq_start.c:88,Yes,adio/common/ad_iwrite.c:190
+370,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/rdma/ch3_istartrndvmsg.c:268,VALID,src/mpi/coll/helper_fns.c:85,No,
+371,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2257,VALID,src/mpi/coll/helper_fns.c:85,No,
+372,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2262,VALID,src/mpi/coll/helper_fns.c:85,No,
+373,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1126,VALID,src/mpi/coll/helper_fns.c:85,No,
+374,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:1565,VALID,src/mpi/coll/helper_fns.c:85,No,
+375,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2199,VALID,src/mpi/coll/helper_fns.c:85,No,
+376,*MPI_ERR_TRUNCATE MPI_ERR_INTERN MPI_ERR_TYPE MPI_ERR_OTHER,src/mpid/ch3/channels/mrail/src/gen2/rdma_iba_1sc.c:2203,VALID,src/mpi/coll/helper_fns.c:85,No,
+377,*MPI_ERR_OTHER,src/mpid/ch3/channels/common/src/affinity/hwloc_bind.c:2585,VALID,src/mpid/ch3/channels/common/src/affinity/hwloc_bind.c:2103,No,
+378,*MPI_ERR_OTHER,src/mpid/ch3/channels/common/src/detect/arch/mv2_arch_detect.c:407,VALID,src/mpid/ch3/channels/common/src/affinity/hwloc_bind.c:2103,No,
+379,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/comm/comm_split.c:189,VALID,src/mpi/coll/helper_fns.c:533,No,
+380,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/comm/comm_split.c:214,VALID,src/mpi/coll/helper_fns.c:533,No,
+381,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/comm/comm_split.c:254,VALID,src/mpi/coll/helper_fns.c:533,No,
+382,*MPI_ERR_COUNT MPI_ERR_INTERN MPI_ERR_OTHER,src/mpi/comm/comm_split.c:726,VALID,src/mpi/coll/helper_fns.c:533,No,

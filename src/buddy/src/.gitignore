@@ -1,0 +1,4 @@
+/*.lo
+/*.o
+/.libs/
+/libbdd.la

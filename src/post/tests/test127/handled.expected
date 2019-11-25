@@ -1,0 +1,27 @@
+post/tests/test127/source.c:10: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:9:"err" may have an unchecked error
+post/tests/test127/source.c:8:"err" may have an unchecked error
+post/tests/test127/source.c:6:"err" may have an unchecked error
+post/tests/test127/source.c:5:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test127/source.c:10: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:5:"err" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test127/source.c:11: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:10:"rc" may have an unchecked error
+post/tests/test127/source.c:9:"rc" may have an unchecked error
+post/tests/test127/source.c:8:"rc" may have an unchecked error
+post/tests/test127/source.c:6:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test127/source.c:11: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:6:"rc" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test127/source.c:14: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:9:"err" may have an unchecked error
+post/tests/test127/source.c:8:"err" may have an unchecked error
+post/tests/test127/source.c:6:"err" may have an unchecked error
+post/tests/test127/source.c:5:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test127/source.c:14: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test127/source.c:5:"err" receives an error from "TENTATIVE_EIO"
+====

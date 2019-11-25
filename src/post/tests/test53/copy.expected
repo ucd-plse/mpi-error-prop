@@ -1,0 +1,11 @@
+post/tests/test53/source.c:11: overwriting potential unchecked error in "y"
+post/tests/test53/source.c:4:"p" may have an unchecked error
+post/tests/test53/source.c:3:"p" may have an unchecked error
+post/tests/test53/source.c:10:"y" may have an unchecked error
+post/tests/test53/source.c:9:"y" receives an error from "TENTATIVE_EIO"
+
+post/tests/test53/source.c:11: overwriting potential unchecked error in "y"
+post/tests/test53/source.c:4:"p" may have an unchecked error
+post/tests/test53/source.c:10:"y" may have an unchecked error
+post/tests/test53/source.c:9:"y" receives an error from "TENTATIVE_EIO"
+====

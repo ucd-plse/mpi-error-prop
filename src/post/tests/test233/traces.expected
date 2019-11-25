@@ -1,0 +1,3 @@
+ID|main.15bbe HNDL|CALL|callA 
+PRE_INTRA|main.15bbe PRE|CALL|foo PRE|STORE|main#err PRE|LOAD|main#err 
+POST_INTRA|main.15bbe POST|CALL|callA 

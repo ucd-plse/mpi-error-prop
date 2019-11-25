@@ -1,0 +1,111 @@
+import SCons.Warnings
+
+Import('env')
+
+env = env.Clone(
+    LIBPATH = '$wpds_lib',
+    wpds_lib = Dir('../../wpds/lib' + ('', '64')[env['Is64']]),
+    RPATH=['$wpds_lib.abspath', Dir('.').abspath],
+    INCPREFIX='-isystem ',
+    SHLIBPREFIX=None,
+    CPPPATH = [
+        '../../wpds/Source',
+        '$CPPPATH',
+        ],
+    LIBS=[
+        '$LIBS',
+        'wali',
+	'sqlite3',
+	'config++',
+        ],
+    )
+
+llvm_version = env['llvm_version']
+
+########################################################################
+#
+#  LLVM plugin building
+#
+
+env.AppendUnique(
+    SHLINKFLAGS='${("", "-Wl,--no-undefined")["gnulink" in TOOLS]}',
+    LIBS='LLVM-$llvm_version',
+    )
+env.MergeFlags('!llvm-config --cxxflags --ldflags')
+
+# bug fix for SCons 2.0.1 and earlier
+try:
+    env['CFLAGS'].remove('-std=c++11')
+    env.AppendUnique(CXXFLAGS='-std=c++11')
+except ValueError:
+    pass
+
+# GCC does not allow "-pg" and "-fomit-frame-pointer" to be used
+# simultaneously.  The latter is added by llvm-config.
+if env['PROFILE']:
+    try:
+        env['CCFLAGS'].remove('-fomit-frame-pointer')
+    except ValueError:
+        pass
+
+if not env['OPTIMIZE']:
+    for level in 2, 3:
+        try:
+            env['CCFLAGS'].remove('-O%s' % level)
+            env['CPPFLAGS'].remove('-Wp,-D_FORTIFY_SOURCE=2')
+        except KeyError:
+            pass
+        except ValueError:
+            pass
+
+libwpds = env.SharedLibrary(
+    'libwpds',
+    [
+        'Rules.cpp',
+        'Rule.cpp',
+        'Names.cpp',
+        'RulesPrinter.cpp',
+        'BranchSafety.cpp',
+        'Utility.cpp',
+	'ControlFlow.cpp',
+	'TraceVisitors.cpp',
+	'Traces.cpp',
+	'TraceDatabase.cpp',
+	'DataflowWali.cpp',
+	'FunctionContext.cpp',
+    ],
+    )
+
+tracegen = env.Program(
+    'tracegen',
+    [
+        'tracegen.cpp',
+    ],
+    LIBS=["$LIBS", "wpds"],
+    LIBPATH=["$LIBPATH", "."]
+    )
+
+frontend = env.Program(
+    'frontend',
+    [
+        'frontend.cpp',
+    ],
+    LIBS=["$LIBS", "wpds"],
+    LIBPATH=["$LIBPATH", "."]
+    )
+
+Default(libwpds)
+Default(tracegen)
+Default(frontend)
+
+########################################################################
+#
+#  full test suite starting from C source code
+#
+
+SConscript(
+    dirs=[
+        'tests',
+        ],
+    exports='env',
+    )

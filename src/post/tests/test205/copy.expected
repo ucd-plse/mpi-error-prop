@@ -1,0 +1,9 @@
+Error codes: *TENTATIVE_ESRC 
+
+post/tests/test205/source.c:6: overwriting potential unchecked error in variable "a"
+post/tests/test205/source.c:16:"a" may have an unchecked error
+post/tests/test205/source.c:15:"a" receives an error from "TENTATIVE_ESRC"
+
+post/tests/test205/source.c:6: overwriting potential unchecked error in variable "a"
+post/tests/test205/source.c:15:"a" receives an error from "TENTATIVE_ESRC"
+====

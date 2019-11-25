@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test222/source.c:23: potential non-tentative unchecked error in out of scope variable "err"
+post/tests/test222/source.c:22:"err" may have an unchecked error
+post/tests/test222/source.c:22:"err" receives an error from function "ext4_symlink"
+post/tests/test222/source.c:4: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test222/source.c:23: potential non-tentative unchecked error in out of scope variable "err"
+post/tests/test222/source.c:22:"err" receives an error from function "ext4_symlink"
+post/tests/test222/source.c:4: unchecked error "TENTATIVE_EIO" is returned
+====

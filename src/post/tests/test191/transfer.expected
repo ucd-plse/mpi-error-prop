@@ -1,0 +1,60 @@
+post/tests/test191/source.c:8:ENXIO* returned from function PTR_ERR
+post/tests/test191/source.c:31:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" receives an error from "cabs2cil_"
+post/tests/test191/source.c:30:"cabs2cil_" receives an error from function "bar"
+post/tests/test191/source.c:21: an unchecked error may be returned
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test191/source.c:8:ENXIO* returned from function PTR_ERR
+post/tests/test191/source.c:31:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" receives an error from "cabs2cil_"
+post/tests/test191/source.c:30:"cabs2cil_" receives an error from function "bar"
+post/tests/test191/source.c:21: an unchecked error may be returned
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test191/source.c:12:TENTATIVE_ENXIO* returned from function ERR_PTR
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test191/source.c:12:TENTATIVE_ENXIO* returned from function ERR_PTR
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test191/source.c:21:TENTATIVE_ENXIO* returned from function bar
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test191/source.c:21:TENTATIVE_ENXIO* returned from function bar
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test191/source.c:27:TENTATIVE_EIO* returned from function foo
+====
+post/tests/test191/source.c:31:ENXIO* returned from function foo
+post/tests/test191/source.c:31:"cabs2cil_" receives an error from function "PTR_ERR"
+post/tests/test191/source.c:8: an unchecked error may be returned
+post/tests/test191/source.c:31:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" receives an error from "cabs2cil_"
+post/tests/test191/source.c:30:"cabs2cil_" receives an error from function "bar"
+post/tests/test191/source.c:21: an unchecked error may be returned
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test191/source.c:31:ENXIO* returned from function foo
+post/tests/test191/source.c:31:"cabs2cil_" receives an error from function "PTR_ERR"
+post/tests/test191/source.c:8: an unchecked error may be returned
+post/tests/test191/source.c:31:"err" may have an unchecked error
+post/tests/test191/source.c:30:"err" receives an error from "cabs2cil_"
+post/tests/test191/source.c:30:"cabs2cil_" receives an error from function "bar"
+post/tests/test191/source.c:21: an unchecked error may be returned
+post/tests/test191/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test191/source.c:12: an unchecked error may be returned
+post/tests/test191/source.c:21:"TENTATIVE_ENXIO" error is passed as argument
+====

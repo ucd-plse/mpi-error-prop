@@ -1,0 +1,18 @@
+Error codes: *EIO 
+
+post/tests/test88/source.c:9: potential non-tentative unchecked error is not saved
+post/tests/test88/source.c:3: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test88/source.c:9: potential non-tentative unchecked error is not saved
+post/tests/test88/source.c:3: unchecked error "TENTATIVE_EIO" is returned
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test88/source.c:11: potential unchecked error in out of scope variable "y"
+post/tests/test88/source.c:10:"y" may have an unchecked error
+post/tests/test88/source.c:9:"y" may have an unchecked error
+post/tests/test88/source.c:8:"y" receives an error from "TENTATIVE_EIO"
+
+post/tests/test88/source.c:11: potential unchecked error in out of scope variable "y"
+post/tests/test88/source.c:8:"y" receives an error from "TENTATIVE_EIO"
+====

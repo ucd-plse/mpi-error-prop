@@ -1,0 +1,79 @@
+from distutils.version import StrictVersion
+
+Import('env')
+
+env.Tool('tests', toolpath=['tests'])
+env.Tool('valgrind', toolpath=['.'])
+
+def llvm_installed(context):
+    context.Message('checking LLVM installation ... ')
+    if 'LLVM_CONFIG' in context.env:
+        context.Result('found')
+        return True
+    else:
+        context.Result('not found; try using LLVM_CONFIG=/path/to/llvm-config')
+        return False
+
+def llvm_version(context):
+    context.Message('checking LLVM version ... ')
+    succeeded, output = context.TryAction('$LLVM_CONFIG --version >$TARGET')
+    if succeeded:
+        result = output.rstrip('\n')
+        context.env['llvm_version'] = result
+        context.Result(result)
+        return result
+    else:
+        context.Result('failed')
+        context.env.Exit(1)
+
+def llvm_bindir(context):
+    context.Message('checking LLVM executables ... ')
+    succeeded, output = context.TryAction('$LLVM_CONFIG --bindir >$TARGET')
+    if succeeded:
+        output = output.rstrip()
+        context.env.PrependENVPath('PATH', output)
+        context.Result(output)
+        return output
+    else:
+        context.Result('failed')
+        context.env.Exit(1)
+
+conf = Configure(env, custom_tests={
+        'LLVMInstalled': llvm_installed,
+        'LLVMVersion': llvm_version,
+        'LLVMBinDir': llvm_bindir,
+        })
+
+installed = conf.LLVMInstalled()
+if not installed: Return()
+
+conf.LLVMVersion()
+conf.LLVMBinDir()
+env = conf.Finish()
+
+llvm_version = env['llvm_version']
+llvm_version = StrictVersion(llvm_version)
+llvm_require = '3.4'
+if llvm_version < llvm_require:
+    SCons.Warnings.warn(SCons.Warnings.MissingSConscriptWarning, 'LLVM %s too old; need at least version %s' % (llvm_version, llvm_require))
+    Return()
+
+Alias('test',
+      map(Alias,
+          [
+            'test-unit',
+	    'test-copy',
+            'test-handled',
+            'test-transfer',
+            'test-opt',
+            ]
+          )
+      )
+
+SConscript(
+    dirs=[
+        'irllvm-wpds-xml',
+        'main',
+        ],
+    exports='env',
+    )

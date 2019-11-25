@@ -1,0 +1,122 @@
+on: [push]
+
+jobs:
+  mpich_phase0:
+    runs-on: self-hosted
+    name: Generate MPICH phase 0 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mpich-bugs 0
+  mpich_phase1:
+    runs-on: self-hosted
+    name: Generate MPICH phase 1 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mpich-bugs 1
+  mpich_phase2:
+    runs-on: self-hosted
+    name: Generate MPICH phase 2 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mpich-bugs 2
+  mvapich_phase0:
+    runs-on: self-hosted
+    name: Generate MVAPICH phase 0 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MVAPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mvapich-bugs 0
+  mvapich_phase1:
+    runs-on: self-hosted
+    name: Generate MVAPICH phase 1 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MVAPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mvapich-bugs 1
+  mvapich_phase2:
+    runs-on: self-hosted
+    name: Generate MVAPICH phase 2 csv
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run mpi-error-prop on MVAPICH
+      uses: ./.github/actions/run-mpi-error-prop
+      with:
+        command: mvapich-bugs 2
+  fault_injection_example:
+    runs-on: self-hosted
+    name: Fault injection example bug
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run fault injection experiment
+        uses: ./.github/actions/fault-injection
+        with:
+          dropping: src/mpi/comm/comm_split.c:328
+          origin: src/mpi/comm/commutil.c:247
+          injection_strategy: return
+          fix_strategy: none
+          target: testing
+          library: mpich
+          phase: 0
+          expect_crash: 1
+  kripke_crash:
+    runs-on: self-hosted
+    name: Kripke crash
+    steps:
+      - uses: actions/checkout@v1
+      - name: fault injection
+        uses: ./.github/actions/fault-injection
+        with:
+          dropping: src/mpi/comm/comm_split.c:368
+          origin: src/mpi/comm/commutil.c:247
+          injection_strategy: nomem
+          fix_strategy: none
+          target: kripke
+          library: mpich
+          phase: 0
+          expect_crash: 1
+  miniamr_crash:
+    runs-on: self-hosted
+    name: miniAMR crash
+    steps:
+      - uses: actions/checkout@v1
+      - name: fault injection
+        uses: ./.github/actions/fault-injection
+        with:
+          dropping: src/mpi/comm/comm_split.c:368
+          origin: src/mpi/comm/commutil.c:247
+          injection_strategy: nomem
+          fix_strategy: none
+          target: miniamr
+          library: mpich
+          phase: 0
+          expect_crash: 1
+  minife_crash:
+    runs-on: self-hosted
+    name: miniAMR crash
+    steps:
+      - uses: actions/checkout@v1
+      - name: fault injection
+        uses: ./.github/actions/fault-injection
+        with:
+          dropping: src/mpi_t/mpit_initthread.c:51
+          origin: src/util/cvar/mpir_cvars.c:1515
+          injection_strategy: return
+          fix_strategy: return
+          target: minife
+          library: mpich
+          phase: 0
+          expect_crash: 1
+  

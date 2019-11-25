@@ -1,0 +1,5 @@
+generic_file_aio_read
+generic_file_aio_write
+cifs_user_write
+__generic_file_aio_write
+cifs_file_aio_write

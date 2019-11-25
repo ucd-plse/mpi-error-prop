@@ -1,0 +1,15 @@
+post/tests/test180/source.c:27: Dereferencing variable foo#nr, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test180/source.c:32:"nr" may have an unchecked error
+post/tests/test180/source.c:31:"nr" may have an unchecked error
+post/tests/test180/source.c:31:"nr" receives an error from "cabs2cil_"
+post/tests/test180/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test180/source.c:18: an unchecked error may be returned
+post/tests/test180/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test180/source.c:27: Dereferencing variable foo#nr, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test180/source.c:32:"nr" may have an unchecked error
+post/tests/test180/source.c:31:"nr" receives an error from "cabs2cil_"
+post/tests/test180/source.c:31:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test180/source.c:18: an unchecked error may be returned
+post/tests/test180/source.c:31:"TENTATIVE_ENXIO" error is passed as argument
+====

@@ -1,0 +1,10 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test13/source.c:10: potential unchecked error in out of scope variable "y"
+post/tests/test13/source.c:8:"y" receives an error from "a"
+post/tests/test13/source.c:7:"a" receives an error from "TENTATIVE_EIO"
+
+post/tests/test13/source.c:10: potential unchecked error in out of scope variable "y"
+post/tests/test13/source.c:8:"y" receives an error from "a"
+post/tests/test13/source.c:7:"a" receives an error from "TENTATIVE_EIO"
+====

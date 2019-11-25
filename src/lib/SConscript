@@ -1,0 +1,17 @@
+Import('env')
+
+gtest_env = env.Clone()
+gmock_env = env.Clone()
+
+GTEST_DIR = Dir("googletest/googletest").abspath
+GMOCK_DIR = Dir("googletest/googlemock").abspath
+GTEST_LIB_PATH = GTEST_DIR + "/src"
+GTEST_INCLUDE_PATH = [GTEST_DIR + "/include", GMOCK_DIR + "/include"]
+
+gtest_env.AppendUnique(CXXFLAGS="-pthread")
+gtest = gtest_env.Library([GTEST_DIR + "/src/gtest-all.cc", GMOCK_DIR + "/src/gmock-all.cc"],
+		  CPPPATH = [GTEST_DIR, GMOCK_DIR, GTEST_INCLUDE_PATH],
+		  LIBS="pthread",
+		 )
+
+Export('GTEST_INCLUDE_PATH', 'GTEST_LIB_PATH')

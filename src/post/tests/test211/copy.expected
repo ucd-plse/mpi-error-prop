@@ -1,0 +1,10 @@
+Error codes: *EIO 
+
+post/tests/test211/source.c:8: potential non-tentative unchecked error in out of scope variable "*x"
+post/tests/test211/source.c:7:"*x" receives an error from function "foo"
+post/tests/test211/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test211/source.c:8: potential non-tentative unchecked error in out of scope variable "*x"
+post/tests/test211/source.c:7:"*x" receives an error from function "foo"
+post/tests/test211/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====

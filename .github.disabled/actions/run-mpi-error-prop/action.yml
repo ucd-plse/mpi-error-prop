@@ -1,0 +1,10 @@
+name: 'Run MPIErrorProp'
+description: 'Runs MPIErrorProp on an MPI implementation'
+inputs:
+  command:
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://ucdavisplse/mpi-error-prop-artifact'
+  args:
+    - ${{ inputs.command }}
