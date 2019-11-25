@@ -1,0 +1,3 @@
+ID|main.10bbe HNDL|STORE|main#y 
+PRE_INTRA|main.10bbe PRE|LOAD|main#x PRE|CALL|foo1 PRE|STORE|main#err PRE|LOAD|main#err 
+POST_INTRA|main.10bbe POST|STORE|main#y POST|LOAD|main#x POST|STORE|main#y POST|STORE|main#y 

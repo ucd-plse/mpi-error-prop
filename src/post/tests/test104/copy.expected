@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test104/source.c:11: potential non-tentative unchecked error is not saved
+post/tests/test104/source.c:5: an unchecked error may be returned
+post/tests/test104/source.c:4:"rc" may have an unchecked error
+post/tests/test104/source.c:3:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test104/source.c:11: potential non-tentative unchecked error is not saved
+post/tests/test104/source.c:5: an unchecked error may be returned
+post/tests/test104/source.c:3:"rc" receives an error from "TENTATIVE_EIO"
+====

@@ -1,0 +1,15 @@
+[fault-injection.sh]: kripke-example src/mpi/comm/comm_split.c:368 src/mpi/comm/commutil.c:247 nomem none kripke mpich 0
+[inject.sh]: kripke-example /d/kripke-example.txt mpich
+/d /scripts/injection
+/scripts/injection
+Does not exist: /d/kripke-example/src/mpi/romio/src/mpi/comm/comm_split.c
+Does not exist: /d/kripke-example/src/mpi/romio/src/mpi/comm/commutil.c
+./test.sh: line 20: pushd: /d/kripke-example: No such file or directory
+./test.sh: line 32: ./configure: No such file or directory
+./test.sh: line 34: popd: directory stack empty
+cp: cannot create regular file '/d/kripke-example/src/include/mpi.h': No such file or directory
+cp: cannot create regular file '/d/kripke-example/src/mpi/init/init.c': No such file or directory
+./test.sh: line 37: cd: /d/kripke-example: No such file or directory
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.
+compile failed

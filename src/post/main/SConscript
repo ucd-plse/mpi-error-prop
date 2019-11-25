@@ -1,0 +1,87 @@
+Import('env', 'XercesDir')
+
+xerces = Dir(XercesDir, '../../wpds/AddOns/Parse/ThirdParty')
+xerinc = xerces.Dir('include')
+
+
+cenv = env.Clone(
+    CPPPATH = [
+        '../../wpds/AddOns/Parse/Source',
+        xerinc,
+        ],
+    LIBPATH = '$wpds_lib',
+    LIBS = [
+        'waliparse',
+        'xerces-c',
+    ],
+    RPATH='$wpds_lib.abspath',
+    wpds_lib = Dir('../../wpds/lib' + ('', '64')[env['Is64']]),
+    )
+
+if cenv['QUANTIFY']:
+    cenv.Replace(CXX = ['quantify', cenv['CXX']])
+
+cenv.MergeFlags('-std=c++11')
+
+
+########################################################################
+
+
+main = cenv.Program(
+    'main', [
+        'ErrorPropagation.cpp',
+        'FindPathVisitor.cpp',
+        'Main.cpp',
+        'MergeError.cpp',
+        'ParseArgv.cpp',
+        'ProgramPoint.cpp',
+        'Values.cpp',
+        'Variables.cpp',
+        'ErrorPropagationHandler.cpp',
+        'Assignment.cpp',
+        'AssignmentInfo.cpp',
+        'Hexastore.cpp',
+        'Return.cpp',
+        'Dereference.cpp',
+        'IsErr.cpp',
+        'Handled.cpp',
+        'Operand.cpp',
+        'Path.cpp',
+        'Input.cpp',
+        'Output.cpp',
+        'Message.cpp',
+        'MessageStandard.cpp',
+        'MessageGeoff.cpp',
+	'Predicate.cpp',
+	'MessageTraces.cpp',
+        ],
+    CPPPATH = [
+        '../../buddy/include',
+        '../../wpds/Source',
+        '$CPPPATH',
+        ],
+    LIBPATH = [
+        '../../buddy/lib',
+        '$LIBPATH',
+        ],
+    LIBS=[
+        'bdd',
+        '$LIBS',
+        'wali',
+        ],
+    )
+
+Default(main)
+
+
+compress = cenv.Program(
+    'compress-wpds', [
+        'CompressRules.cpp',
+        'CountRules.cpp',
+        'InitializeCounters.cpp',
+        'PrintRules.cpp',
+        'compress-wpds.cpp',
+        ],
+    )
+
+Default(compress)

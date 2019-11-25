@@ -1,0 +1,31 @@
+Error codes: *EIO 
+
+post/tests/test114/source.c:9: potential non-tentative unchecked error in out of scope variable "x"
+post/tests/test114/source.c:8:"x" receives an error from "cabs2cil_"
+post/tests/test114/source.c:8:"cabs2cil_" receives an error from function "foo"
+post/tests/test114/source.c:3: an unchecked error may be returned
+post/tests/test114/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test114/source.c:9: potential non-tentative unchecked error in out of scope variable "x"
+post/tests/test114/source.c:8:"x" receives an error from "cabs2cil_"
+post/tests/test114/source.c:8:"cabs2cil_" receives an error from function "foo"
+post/tests/test114/source.c:3: an unchecked error may be returned
+post/tests/test114/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *EIO 
+
+post/tests/test114/source.c:20: potential non-tentative unchecked error is not saved
+post/tests/test114/source.c:15: an unchecked error may be returned
+post/tests/test114/source.c:14:"err2" receives an error from "cabs2cil_"
+post/tests/test114/source.c:14:"cabs2cil_" receives an error from function "foo1"
+post/tests/test114/source.c:9: an unchecked error may be returned
+post/tests/test114/source.c:8:"err" may have an unchecked error
+post/tests/test114/source.c:7:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test114/source.c:20: potential non-tentative unchecked error is not saved
+post/tests/test114/source.c:15: an unchecked error may be returned
+post/tests/test114/source.c:14:"err2" receives an error from "cabs2cil_"
+post/tests/test114/source.c:14:"cabs2cil_" receives an error from function "foo1"
+post/tests/test114/source.c:9: an unchecked error may be returned
+post/tests/test114/source.c:7:"err" receives an error from "TENTATIVE_EIO"
+====

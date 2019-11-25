@@ -1,0 +1,565 @@
+allred 4
+allred 7
+allred 4 arg=100
+allredmany 4
+allred2 4
+allred3 10
+allred4 4
+allred5 5
+allred5 10
+allred6 4
+allred6 7
+reduce 5
+reduce 10
+reduce_local 2 mpiversion=2.2
+op_commutative 2
+red3 10
+red4 10
+alltoall1 8
+alltoallv 10
+alltoallv0 10
+alltoallw1 10
+alltoallw2 10
+alltoallw_zeros 1
+alltoallw_zeros 2
+alltoallw_zeros 5
+alltoallw_zeros 8
+allgather2 10
+allgather3 10
+allgatherv2 10
+allgatherv3 10
+allgatherv4 4 timeLimit=600
+allgather_struct 10
+bcasttest 4
+bcasttest 8
+bcasttest 10
+bcastzerotype 1
+bcastzerotype 4
+bcastzerotype 5
+bcastzerotype 10
+coll2 5
+coll3 5
+coll4 4
+coll5 4
+coll6 5
+coll7 1
+coll7 2
+coll7 5
+coll8 4
+coll9 4
+coll10 4
+coll11 4
+coll12 4
+coll13 4
+longuser 4
+redscat 4
+redscat 6
+redscat2 4
+redscat2 5
+redscat2 10
+redscat3 8
+redscatinter 8
+red_scat_block 4 mpiversion=2.2
+red_scat_block 5 mpiversion=2.2
+red_scat_block 8 mpiversion=2.2
+red_scat_block2 4 mpiversion=2.2
+red_scat_block2 5 mpiversion=2.2
+red_scat_block2 10 mpiversion=2.2
+redscatblk3 8 mpiversion=2.2
+redscatblk3 10 mpiversion=2.2
+redscatbkinter 8 mpiversion=2.2
+redscatbkinter 10 mpiversion=2.2
+scantst 4
+exscan 10
+exscan2 5
+gather 4
+gather2 4
+@largetest@gather_big 8
+scattern 4
+scatter2 4
+scatter3 4
+scatterv 4
+icbcast 4
+icbcast 10
+icallreduce 5
+icallreduce 7
+icreduce 5
+icreduce 7
+icscatter 5
+icscatter 7
+icgather 5
+icgather 7
+icallgather 5
+icallgather 7
+icbarrier 5
+icbarrier 7
+icallgatherv 5
+icallgatherv 7
+icgatherv 5
+icgatherv 7
+icscatterv 5
+icscatterv 7
+icalltoall 5
+icalltoall 7
+icalltoallv 5
+icalltoallv 7
+icalltoallw 5
+icalltoallw 7
+# the opxxx tests look at optional types, and are included for MPICH testing.
+# MPI implementations may instead signal errors for these types
+opland 4
+oplor 4
+oplxor 4
+oplxor 5
+opband 4
+opbor 4
+opbxor 4
+opbxor 5
+opprod 5
+opprod 6
+opsum 4
+opmin 4
+opminloc 4
+opmax 5
+opmaxloc 5
+uoplong 4
+uoplong 11
+uoplong 16
+nonblocking 4 mpiversion=3.0
+nonblocking 5 mpiversion=3.0
+nonblocking 10 mpiversion=3.0
+nonblocking2 1 mpiversion=3.0
+nonblocking2 4 mpiversion=3.0
+nonblocking2 5 mpiversion=3.0
+nonblocking2 10 timeLimit=420 mpiversion=3.0
+nonblocking3 1 mpiversion=3.0
+nonblocking3 4 mpiversion=3.0
+nonblocking3 5 mpiversion=3.0
+nonblocking3 10 timeLimit=600 mpiversion=3.0
+iallred 2 mpiversion=3.0
+# ibarrier will hang forever if it fails, but will complete quickly if it
+# succeeds
+ibarrier 2 mpiversion=3.0 timeLimit=30
+
+# run some of the tests, relinked with the nbc_pmpi_adaptor.o file
+nballtoall1 8 mpiversion=3.0
+nbcoll2 5     mpiversion=3.0
+nbredscat 4   mpiversion=3.0
+nbredscat 8   mpiversion=3.0
+nbredscat3 8  mpiversion=3.0
+nbredscatinter 8 mpiversion=3.0
+
+nbicbcast 8 mpiversion=3.0
+nbicallreduce 8 mpiversion=3.0
+nbicreduce 8 mpiversion=3.0
+nbicscatter 8 mpiversion=3.0
+nbicgather 8 mpiversion=3.0
+nbicallgather 8 mpiversion=3.0
+nbicbarrier 8  mpiversion=3.0
+nbicallgatherv 8 mpiversion=3.0
+nbicgatherv 8 mpiversion=3.0
+nbicscatterv 8 mpiversion=3.0
+nbicalltoall 8 mpiversion=3.0
+nbicalltoallv 8 mpiversion=3.0
+nbicalltoallw 8 mpiversion=3.0
+
+neighb_coll 4 mpiversion=3.0
+
+@coll_algo_tests@
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_CHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_BYTE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_WCHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_LONG_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_CHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_SHORT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT8_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT16_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT32_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_INT64_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT8_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT16_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT32_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_UINT64_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_FLOAT_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_DOUBLE_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_2INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_SHORT_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L24 4 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_CHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_BYTE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_WCHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_LONG_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_CHAR arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_SHORT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UNSIGNED_LONG_LONG arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT8_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT16_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT32_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_INT64_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT8_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT16_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT32_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_UINT64_T arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_FLOAT_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_DOUBLE_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_C_LONG_DOUBLE_COMPLEX arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_FLOAT_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_DOUBLE_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_2INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_SHORT_INT arg=-count=262144 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=1 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=8 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=64 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=512 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=32768 timeLimit=1200
+bcast__BASIC__L25 10 arg=-type=MPI_LONG_DOUBLE_INT arg=-count=262144 timeLimit=1200
+bcast__STRUCT__L35 4 arg=-numtypes=4 arg=-types=MPI_CHAR,MPI_INT,MPI_INT,MPI_FLOAT arg=-counts=64,32,16,8 

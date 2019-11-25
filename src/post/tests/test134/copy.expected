@@ -1,0 +1,18 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test134/source.c:13: potential unchecked error in out of scope variable "x"
+post/tests/test134/source.c:12:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test134/source.c:13: potential unchecked error in out of scope variable "x"
+post/tests/test134/source.c:12:"x" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test134/source.c:19: overwriting potential unchecked error in variable "x"
+post/tests/test134/source.c:18:"x" may have an unchecked error
+post/tests/test134/source.c:17:"x" may have an unchecked error
+post/tests/test134/source.c:16:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test134/source.c:19: overwriting potential unchecked error in variable "x"
+post/tests/test134/source.c:16:"x" receives an error from "TENTATIVE_EIO"
+====

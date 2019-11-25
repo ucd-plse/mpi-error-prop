@@ -1,0 +1,171 @@
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:8: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:7:"rc" may have an unchecked error
+post/tests/test100/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:8: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:9: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:8:"err" may have an unchecked error
+post/tests/test100/source.c:7:"err" may have an unchecked error
+post/tests/test100/source.c:5:"err" may have an unchecked error
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:9: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:13: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:12:"rc" may have an unchecked error
+post/tests/test100/source.c:7:"rc" may have an unchecked error
+post/tests/test100/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:13: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:17: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:16:"rc" may have an unchecked error
+post/tests/test100/source.c:9:"rc" may have an unchecked error
+post/tests/test100/source.c:8:"rc" receives an error from "err"
+post/tests/test100/source.c:7:"err" may have an unchecked error
+post/tests/test100/source.c:5:"err" may have an unchecked error
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:17: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:8:"rc" receives an error from "err"
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:18: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:17:"err" may have an unchecked error
+post/tests/test100/source.c:16:"err" may have an unchecked error
+post/tests/test100/source.c:13:"err" may have an unchecked error
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:18: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:22: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:21:"rc" may have an unchecked error
+post/tests/test100/source.c:16:"rc" may have an unchecked error
+post/tests/test100/source.c:9:"rc" may have an unchecked error
+post/tests/test100/source.c:8:"rc" receives an error from "err"
+post/tests/test100/source.c:7:"err" may have an unchecked error
+post/tests/test100/source.c:5:"err" may have an unchecked error
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:22: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:8:"rc" receives an error from "err"
+post/tests/test100/source.c:4:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:26: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:25:"err" may have an unchecked error
+post/tests/test100/source.c:22:"err" may have an unchecked error
+post/tests/test100/source.c:21:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:26: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:21:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:27: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:26:"rc" may have an unchecked error
+post/tests/test100/source.c:25:"rc" may have an unchecked error
+post/tests/test100/source.c:18:"rc" may have an unchecked error
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:16:"err" may have an unchecked error
+post/tests/test100/source.c:13:"err" may have an unchecked error
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:27: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:30: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:25:"err" may have an unchecked error
+post/tests/test100/source.c:22:"err" may have an unchecked error
+post/tests/test100/source.c:21:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:30: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:21:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:35: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:34:"err" may have an unchecked error
+post/tests/test100/source.c:27:"err" may have an unchecked error
+post/tests/test100/source.c:26:"err" receives an error from "rc"
+post/tests/test100/source.c:25:"rc" may have an unchecked error
+post/tests/test100/source.c:18:"rc" may have an unchecked error
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:16:"err" may have an unchecked error
+post/tests/test100/source.c:13:"err" may have an unchecked error
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:35: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:26:"err" receives an error from "rc"
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:36: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:35:"rc" may have an unchecked error
+post/tests/test100/source.c:34:"rc" may have an unchecked error
+post/tests/test100/source.c:31:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:36: overwriting potential unchecked error in variable "rc"
+post/tests/test100/source.c:31:"rc" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:39: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:34:"err" may have an unchecked error
+post/tests/test100/source.c:27:"err" may have an unchecked error
+post/tests/test100/source.c:26:"err" receives an error from "rc"
+post/tests/test100/source.c:25:"rc" may have an unchecked error
+post/tests/test100/source.c:18:"rc" may have an unchecked error
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:16:"err" may have an unchecked error
+post/tests/test100/source.c:13:"err" may have an unchecked error
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:39: overwriting potential unchecked error in variable "err"
+post/tests/test100/source.c:26:"err" receives an error from "rc"
+post/tests/test100/source.c:17:"rc" receives an error from "err"
+post/tests/test100/source.c:12:"err" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test100/source.c:43: potential unchecked error in out of scope variable "err"
+post/tests/test100/source.c:36:"err" may have an unchecked error
+post/tests/test100/source.c:35:"err" receives an error from "rc"
+post/tests/test100/source.c:34:"rc" may have an unchecked error
+post/tests/test100/source.c:31:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test100/source.c:43: potential unchecked error in out of scope variable "err"
+post/tests/test100/source.c:35:"err" receives an error from "rc"
+post/tests/test100/source.c:31:"rc" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test100/source.c:43: potential unchecked error in out of scope variable "rc"
+post/tests/test100/source.c:40:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test100/source.c:43: potential unchecked error in out of scope variable "rc"
+post/tests/test100/source.c:40:"rc" receives an error from "TENTATIVE_ENXIO"
+====

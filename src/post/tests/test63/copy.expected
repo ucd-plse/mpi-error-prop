@@ -1,0 +1,31 @@
+Error codes: *TENTATIVE_EROFS TENTATIVE_EIO 
+
+post/tests/test63/source.c:14: overwriting potential unchecked error in variable "error"
+post/tests/test63/source.c:12:"error" receives an error from "TENTATIVE_EROFS"
+
+post/tests/test63/source.c:14: overwriting potential unchecked error in variable "error"
+post/tests/test63/source.c:12:"error" receives an error from "TENTATIVE_EROFS"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test63/source.c:17: potential unchecked error in out of scope variable "error"
+post/tests/test63/source.c:14:"error" receives an error from "var"
+post/tests/test63/source.c:9:"var" may have an unchecked error
+post/tests/test63/source.c:8:"var" may have an unchecked error
+post/tests/test63/source.c:6:"var" receives an error from "TENTATIVE_EIO"
+
+post/tests/test63/source.c:17: potential unchecked error in out of scope variable "error"
+post/tests/test63/source.c:14:"error" receives an error from "var"
+post/tests/test63/source.c:6:"var" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test63/source.c:17: potential unchecked error in out of scope variable "var"
+post/tests/test63/source.c:14:"var" may have an unchecked error
+post/tests/test63/source.c:9:"var" may have an unchecked error
+post/tests/test63/source.c:8:"var" may have an unchecked error
+post/tests/test63/source.c:6:"var" receives an error from "TENTATIVE_EIO"
+
+post/tests/test63/source.c:17: potential unchecked error in out of scope variable "var"
+post/tests/test63/source.c:6:"var" receives an error from "TENTATIVE_EIO"
+====

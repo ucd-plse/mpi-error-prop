@@ -1,0 +1,25 @@
+Import('env')
+
+env = env.Clone()
+env.AppendUnique(CFLAGS='-Wno-unused-result')
+
+confflags = [
+    'CFLAGS=' + env.subst('$CFLAGS $CCFLAGS'),
+    'CXXFLAGS=' + env.subst('$CXXFLAGS $CCFLAGS'),
+    ]
+
+Install('include', ['src/bdd.h', 'src/fdd.h'])
+Install('lib', 'src/.libs/libbdd.a')
+
+env.Command('src/.libs/libbdd.a', 'Makefile', [
+    Delete(File('src/libbdd.la').abspath),
+    ['make', '-C', '$SOURCE.dir'],
+    ])
+
+configure = env.Command('configure', 'configure.ac', 'autoconf --output=$TARGET --include=$SOURCE.dir $SOURCE')
+env.Command('Makefile', configure, [
+    ['cd', '$TARGET.dir', '&&', './$SOURCE.file', '--disable-shared'] + confflags
+    ])
+
+junk = ['src/.libs', map(Glob, ['src/*.la', 'src/*.lo', 'src/*.o'])]
+Clean('src/.libs/libbdd.a', junk)

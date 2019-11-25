@@ -1,0 +1,136 @@
+import ConfigParser
+
+Import('env', 'GTEST_INCLUDE_PATH', 'GTEST_LIB_PATH')
+
+env = env.Clone(
+    tools=[
+        'bitcode',
+	'compare',
+        'tests',
+        'wpds',
+	'tracegen',
+        ],
+    toolpath=[
+        '..',
+        '../../main',
+        '../../tests',
+        ]
+)
+
+Alias('test-irllvm', '.')
+#Alias('test', 'test-llvm')
+
+gtest_env = env.Clone()
+gtest_env.Append(CPPPATH=[GTEST_INCLUDE_PATH])
+
+# For DataflowWali
+gtest_env.Append(CPPPATH=['../../../wpds/Source'])
+
+gtest_env.Append(LIBPATH=[GTEST_LIB_PATH, ".."])
+gtest_env.Append(LIBS=["gtest-all", "pthread", "wpds"])
+
+unit = gtest_env.Program("unit-tests", 
+     ["unit.cpp", 
+     "DepthFirstTest.cpp", 
+     "ActionTest.cpp",
+     "DataflowTest.cpp",
+     ])
+
+# If unit-tests returns non-zero unit.passed is not created, thereby breaking the build.
+run_unit = env.Command("unit.passed", "", "cd ${TARGET.dir}; rm -f unit.passed; ./unit-tests && touch unit.passed")
+Depends(run_unit, "unit-tests")
+Alias('test-unit', run_unit)
+env.AlwaysBuild(run_unit)
+
+########################################################################
+#
+#  full test suite starting from C source code
+#
+
+
+for testdir, config in env.Tests():
+    enabled_frontends = [x.strip() for x in config.get('create wpds', 'enabled').split()]
+    if 'all' not in enabled_frontends:
+        if 'irllvm' not in enabled_frontends:
+            continue
+    
+    subdir = Dir(testdir.name)
+
+    opt_compare = "false"
+    tenv = env.Clone()
+    tenv['OPT_FLAGS'] = ""
+    try:
+        tenv['OPT_FLAGS'] = config.get('create wpds', 'flags')
+        opt_compare = config.get('create wpds', 'compare').lower()
+        if opt_compare == "true":
+            tenv['OPT_OUT']   = subdir.File('opt.out')
+    except (ConfigParser.NoSectionError, ConfigParser.NoOptionError):
+        pass
+
+    try:
+        tenv['CONFIG_FILE'] = config.get('create wpds', 'config')
+    except ConfigParser.NoOptionError:
+        pass
+
+    wpds_analysis = config.get('analyze wpds', 'analysis')
+    if wpds_analysis != 'standard':
+        tenv.AppendUnique(EDP_FLAGS='--' + wpds_analysis)
+
+    sign = config.get('create wpds', 'sign')
+    if sign == "negative":
+        config_path = "post/irllvm-wpds-xml/tests/test-neg.cfg"
+    elif sign == "positive":
+        config_path = "post/irllvm-wpds-xml/tests/test-pos.cfg"
+    tenv['FRONTEND_CONFIG'] = config_path
+    
+    # find source file
+    language = config.get('create wpds', 'language')
+    suffix = {'C': 'c', 'C++': 'cpp'}[language]
+    source = testdir.File('source.' + suffix)
+
+    # translate source to bitcode
+    suffix = tenv.Bitcode.builder.suffix
+    bitcode = subdir.File('source' + suffix)
+    tenv.Bitcode(bitcode, source, basedir=Dir('../../..'))
+    Alias('test-bitcode', bitcode)
+
+    if wpds_analysis == 'locations' or wpds_analysis == 'traces':
+        tenv['EDP_FLAGS'] = tenv['EDP_FLAGS'] + ' --predicates --no-assignment'
+        # WPDS preferss WPDS_ERROR_CODES over ERROR_CODES when present
+        tenv.AppendUnique(WPDS_ERROR_CODES=File('../../../%s-error-codes.txt' % sign))
+	tenv['PREDS_PATH'] = "post/irllvm-wpds-xml/tests/" + testdir.name + "/copy.out"
+    else:
+        tenv['ERROR_CODES'] = File('../../../%s-error-codes.txt' % sign)
+
+    # find expected output, either here or in common area
+    expected = subdir.File('copy.expected')
+    if not expected.exists():
+        expected = testdir.File(expected.name)
+        Clean(bitcode, subdir)
+
+    if wpds_analysis != "none":
+        # bitcode to WPDS
+        wpds = subdir.File('copy.wpds')
+        tenv.irLlvmWpds(wpds, bitcode)
+
+        # cwpds = tenv.CompressWpds(wpds)[0]
+
+    	# running analysis
+        edp = tenv.EDP(wpds)[0]
+        passed = tenv.Compare([edp, expected])
+        Alias('test-copy', passed)
+
+    if opt_compare == "true":
+        # Suppress linting
+        tenv['WPDS_SCHEMA'] = None
+
+        wpds = subdir.File('opt.out')
+        tenv.irLlvmWpds(wpds, bitcode)
+        passed = tenv.Compare([tenv['OPT_OUT'], testdir.File('opt.expected')])
+        Alias('test-copy', passed)
+
+    if wpds_analysis == 'traces':
+        traces = tenv.TRACEGEN(subdir.File('traces.out'), [subdir.File('copy.out'), bitcode])
+        passed = tenv.Compare([traces, testdir.File('traces.expected')])
+	Alias('test-copy', passed)
+

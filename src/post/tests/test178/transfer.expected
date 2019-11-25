@@ -1,0 +1,29 @@
+post/tests/test178/source.c:30: Dereferencing variable main#r, which may contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test178/source.c:26:"r" may have an unchecked error
+post/tests/test178/source.c:26:"r" receives an error from "cabs2cil_"
+post/tests/test178/source.c:26:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test178/source.c:12: an unchecked error may be returned
+post/tests/test178/source.c:26:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test178/source.c:30: Dereferencing variable main#r, which may contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test178/source.c:26:"r" receives an error from "cabs2cil_"
+post/tests/test178/source.c:26:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test178/source.c:12: an unchecked error may be returned
+post/tests/test178/source.c:26:"TENTATIVE_EIO" error is passed as argument
+====
+post/tests/test178/source.c:31: Dereferencing variable main#s, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test178/source.c:30:"s" may have an unchecked error
+post/tests/test178/source.c:26:"s" may have an unchecked error
+post/tests/test178/source.c:25:"s" may have an unchecked error
+post/tests/test178/source.c:22:"s" may have an unchecked error
+post/tests/test178/source.c:22:"s" receives an error from "cabs2cil_"
+post/tests/test178/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test178/source.c:12: an unchecked error may be returned
+post/tests/test178/source.c:22:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test178/source.c:31: Dereferencing variable main#s, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test178/source.c:22:"s" receives an error from "cabs2cil_"
+post/tests/test178/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test178/source.c:12: an unchecked error may be returned
+post/tests/test178/source.c:22:"TENTATIVE_ENXIO" error is passed as argument
+====

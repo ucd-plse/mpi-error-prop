@@ -1,0 +1,22 @@
+Error codes: *EROFS 
+
+post/tests/test83/source.c:11: overwriting potential non-tentative unchecked error in variable "v"
+post/tests/test83/source.c:10:"v" receives an error from "cabs2cil_"
+post/tests/test83/source.c:10:"cabs2cil_" receives an error from function "foo"
+post/tests/test83/source.c:5: an unchecked error may be returned
+post/tests/test83/source.c:4:"error" receives an error from "TENTATIVE_EROFS"
+
+post/tests/test83/source.c:11: overwriting potential non-tentative unchecked error in variable "v"
+post/tests/test83/source.c:10:"v" receives an error from "cabs2cil_"
+post/tests/test83/source.c:10:"cabs2cil_" receives an error from function "foo"
+post/tests/test83/source.c:5: an unchecked error may be returned
+post/tests/test83/source.c:4:"error" receives an error from "TENTATIVE_EROFS"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test83/source.c:12: potential unchecked error in out of scope variable "v"
+post/tests/test83/source.c:11:"v" receives an error from "TENTATIVE_EIO"
+
+post/tests/test83/source.c:12: potential unchecked error in out of scope variable "v"
+post/tests/test83/source.c:11:"v" receives an error from "TENTATIVE_EIO"
+====

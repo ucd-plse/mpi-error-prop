@@ -1,0 +1,8 @@
+Error codes: *TENTATIVE_EPERM 
+
+post/tests/test85/source.c:4: overwriting potential unchecked error in variable "err"
+post/tests/test85/source.c:3:"err" receives an error from "TENTATIVE_EPERM"
+
+post/tests/test85/source.c:4: overwriting potential unchecked error in variable "err"
+post/tests/test85/source.c:3:"err" receives an error from "TENTATIVE_EPERM"
+====

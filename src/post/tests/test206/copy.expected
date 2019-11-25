@@ -1,0 +1,22 @@
+Error codes: *EPERM 
+
+post/tests/test206/source.c:21: overwriting potential non-tentative unchecked error in variable "b"
+post/tests/test206/source.c:20:"b" may have an unchecked error
+post/tests/test206/source.c:19:"b" may have an unchecked error
+post/tests/test206/source.c:15:"*p1" may have an unchecked error
+post/tests/test206/source.c:19:"b" may have an unchecked error
+post/tests/test206/source.c:22:"b" may have an unchecked error
+post/tests/test206/source.c:21:"b" receives an error from "a"
+post/tests/test206/source.c:20:"a" receives an error from function "cifs_writepages"
+post/tests/test206/source.c:56: an unchecked error may be returned
+post/tests/test206/source.c:55:"l" receives an error from "TENTATIVE_EPERM"
+
+post/tests/test206/source.c:21: overwriting potential non-tentative unchecked error in variable "b"
+post/tests/test206/source.c:19:"b" may have an unchecked error
+post/tests/test206/source.c:15:"*p1" may have an unchecked error
+post/tests/test206/source.c:19:"b" may have an unchecked error
+post/tests/test206/source.c:21:"b" receives an error from "a"
+post/tests/test206/source.c:20:"a" receives an error from function "cifs_writepages"
+post/tests/test206/source.c:56: an unchecked error may be returned
+post/tests/test206/source.c:55:"l" receives an error from "TENTATIVE_EPERM"
+====

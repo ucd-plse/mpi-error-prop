@@ -1,0 +1,25 @@
+Error codes: *E2BIG 
+
+post/tests/test160/source.c:23: overwriting potential non-tentative unchecked error in pointer variable "pr"
+post/tests/test160/source.c:22:"pr" receives an error from function "get_request"
+post/tests/test160/source.c:13: an unchecked error may be returned
+post/tests/test160/source.c:13:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test160/source.c:8: an unchecked error may be returned
+post/tests/test160/source.c:13:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test160/source.c:23: overwriting potential non-tentative unchecked error in pointer variable "pr"
+post/tests/test160/source.c:22:"pr" receives an error from function "get_request"
+post/tests/test160/source.c:13: an unchecked error may be returned
+post/tests/test160/source.c:13:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test160/source.c:8: an unchecked error may be returned
+post/tests/test160/source.c:13:"TENTATIVE_E2BIG" error is passed as argument
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test160/source.c:24: potential unchecked error in out of scope pointer variable "pr"
+post/tests/test160/source.c:23:"pr" may have an unchecked error
+post/tests/test160/source.c:23:"pr" receives an error from "TENTATIVE_EIO"
+
+post/tests/test160/source.c:24: potential unchecked error in out of scope pointer variable "pr"
+post/tests/test160/source.c:23:"pr" receives an error from "TENTATIVE_EIO"
+====

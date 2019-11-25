@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test195/source.c:20: overwriting potential non-tentative unchecked error in variable "error"
+post/tests/test195/source.c:19:"error" may have an unchecked error
+post/tests/test195/source.c:19:"error" receives an error from function "NS_GetFrozenFunctions"
+post/tests/test195/source.c:15: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test195/source.c:20: overwriting potential non-tentative unchecked error in variable "error"
+post/tests/test195/source.c:19:"error" receives an error from function "NS_GetFrozenFunctions"
+post/tests/test195/source.c:15: unchecked error "TENTATIVE_EIO" is returned
+====

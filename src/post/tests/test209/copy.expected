@@ -1,0 +1,45 @@
+Error codes: *EIO 
+
+post/tests/test209/source.c:10: predicate depends on main#x, which must contain one of the following error codes: EIO* 
+post/tests/test209/source.c:8:"x" receives an error from "rc"
+post/tests/test209/source.c:7:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test209/source.c:10: predicate depends on main#x, which must contain one of the following error codes: EIO* 
+post/tests/test209/source.c:8:"x" receives an error from "rc"
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====
+Error codes: *EIO 
+
+post/tests/test209/source.c:15: potential non-tentative unchecked error in out of scope variable "rc"
+post/tests/test209/source.c:13:"rc" may have an unchecked error
+post/tests/test209/source.c:10:"rc" may have an unchecked error
+post/tests/test209/source.c:8:"rc" may have an unchecked error
+post/tests/test209/source.c:7:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test209/source.c:15: potential non-tentative unchecked error in out of scope variable "rc"
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====
+Error codes: *EIO 
+
+post/tests/test209/source.c:15: potential non-tentative unchecked error in out of scope variable "x"
+post/tests/test209/source.c:11:"x" may have an unchecked error
+post/tests/test209/source.c:10:"x" may have an unchecked error
+post/tests/test209/source.c:8:"x" receives an error from "rc"
+post/tests/test209/source.c:7:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" may have an unchecked error
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test209/source.c:15: potential non-tentative unchecked error in out of scope variable "x"
+post/tests/test209/source.c:8:"x" receives an error from "rc"
+post/tests/test209/source.c:6:"rc" receives an error from function "foo"
+post/tests/test209/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:redefine schemaLocation="wpds.xsd">
+
+    <xsd:complexType name="Prologue.type">
+      <xsd:complexContent>
+        <xsd:restriction base="Prologue.type">
+          <xsd:sequence>
+            <xsd:element ref="Variables"></xsd:element>
+          </xsd:sequence>
+        </xsd:restriction>
+      </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:group name="Rule.extras">
+      <xsd:sequence>
+        <xsd:element ref="source" maxOccurs="1" minOccurs="0" />
+        <xsd:element ref="return" maxOccurs="1" minOccurs="0" />
+        <xsd:element ref="output" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="dereference" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="iserr" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="handled" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="operand" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="input" maxOccurs="unbounded" minOccurs="0" />
+        <xsd:element ref="pred" maxOccurs="1" minOccurs="0" />
+      </xsd:sequence>
+    </xsd:group>
+
+    <xsd:complexType name="Weight.type">
+      <xsd:complexContent>
+        <xsd:restriction base="Weight.type">
+          <xsd:choice>
+            <xsd:sequence>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element ref="unimplemented" />
+                <xsd:element ref="set" />
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:element ref="one" />
+            <xsd:element ref="zero" />
+          </xsd:choice>
+          <xsd:attribute name="basis" type="basis.type" use="required" />
+        </xsd:restriction>
+      </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Name.type">
+      <xsd:restriction base="Name.type">
+        <xsd:enumeration value="p" />
+        <xsd:enumeration value="accept" />
+      </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="WFA.type">
+      <xsd:complexContent>
+        <xsd:restriction base="WFA.type">
+          <xsd:sequence>
+            <xsd:element ref="State" maxOccurs="2" minOccurs="2" />
+            <xsd:element ref="Trans" maxOccurs="1" minOccurs="1" />
+          </xsd:sequence>
+          <xsd:attribute name="query" type="query.type" use="required"
+            fixed="INORDER" />
+        </xsd:restriction>
+      </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="stack.type">
+      <xsd:restriction base="stack.type">
+        <xsd:pattern value="[_\w]+\.[1-9]\d*" />
+        <xsd:pattern value="[_\w]+\.[1-9]\d*\.after" />
+        <xsd:pattern value="[_\w]+\.[1-9]\d*\.retval" />
+        <xsd:pattern value="[_\w]+\.0" />
+        <xsd:pattern value="[_\w]+\.0\.after" />
+        <xsd:pattern value="[_\w]+\.0\.retval" />
+        <xsd:pattern value="[_\w]+\.first" />
+
+	<!-- irllvm stack locations -->
+        <xsd:pattern value="[_\w]+\.[1-9]\d*(bbe)?(bbx)?" />
+        <xsd:pattern value="[_\w]+\.[1-9]\d*x?" />
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:redefine>
+
+  <xsd:element name="Globals" type="vars.type" />
+
+  <xsd:complexType name="vars.type">
+    <xsd:sequence>
+      <xsd:element ref="var" maxOccurs="unbounded" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="Pointers" type="vars.type" />
+
+  <xsd:element name="unimplemented" type="unimplemented.type" />
+
+  <xsd:complexType name="unimplemented.type">
+    <xsd:attribute name="reason" type="xsd:normalizedString"
+      use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="set" type="set.type" />
+
+  <xsd:complexType name="set.type">
+    <xsd:attribute name="to" type="identifier.type" use="required" />
+    <xsd:attribute name="from" type="identifier.type" use="required" />
+    <xsd:attribute name="trusted" type="xsd:boolean" default="false" />
+  </xsd:complexType>
+
+ <xsd:element name="return" type="return.type" />
+
+  <xsd:complexType name="return.type">
+    <xsd:attribute name="value" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:simpleType name="identifier.type">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[_\w]+" />
+      <xsd:pattern value="\*[_\w]+" />
+      <xsd:pattern value="[_\w]+\.[_\w]+" />
+      <xsd:pattern value="[_\w]+#[_\w]+" />
+      <xsd:pattern value="[_\w]+#[_\w]+.[_\w]+" />
+      <xsd:pattern value="[_\w]+$[1-9]\d*" />
+      <xsd:pattern value="[_\w]+$return" />
+      <xsd:pattern value="[_\w]+#\*[_\w]+" />
+      <xsd:pattern value="[_\w]+#\*[_\w]+.\*[_\w]+" />
+      <xsd:pattern value="[_\w]+$\*[1-9]\d*" />
+      <xsd:pattern value="[_\w]+$\*return" />
+
+      <!-- For locations such as EIO$mm/page-writeback.c:2068 -->
+      <xsd:pattern value="[_\w]+$.+:\d+" />
+
+      <!-- for struct types -->
+      <xsd:pattern value="[_\w\.]+#?[_\w\.]+(\.\d+\.\d+)*($return)?(\.\d+\.\d+)*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="pred" type="pred.type" />
+
+  <xsd:complexType name="pred.type">
+    <xsd:attribute name="op1" type="identifier.type"  />
+    <xsd:attribute name="op2" type="identifier.type"  />
+  </xsd:complexType>
+
+  <xsd:element name="source" type="source.type" />
+
+  <xsd:complexType name="source.type">
+    <xsd:attribute name="file" type="xsd:anyURI" use="required" />
+    <xsd:attribute name="line" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:element name="dereference" type="dereference.type"></xsd:element>
+
+  <xsd:complexType name="dereference.type">
+    <xsd:attribute name="name" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="iserr" type="iserr.type"></xsd:element>
+
+  <xsd:complexType name="iserr.type">
+    <xsd:attribute name="name" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="handled" type="handled.type"></xsd:element>
+
+  <xsd:complexType name="handled.type">
+    <xsd:attribute name="name" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="operand" type="operand.type"></xsd:element>
+
+  <xsd:complexType name="operand.type">
+    <xsd:attribute name="name" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="input" type="input.type"></xsd:element>
+
+  <xsd:complexType name="input.type">
+    <xsd:attribute name="name" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+ <xsd:element name="output" type="output.type"></xsd:element>
+
+  <xsd:complexType name="output.type">
+    <xsd:attribute name="value" type="identifier.type" use="required" />
+  </xsd:complexType>
+
+  <xsd:element name="var" type="var.type" />
+
+  <xsd:complexType name="var.type">
+    <xsd:attribute name="name" type="identifier.type"/>
+    <xsd:attribute name="id" type="identifier.type" use="required"/>
+  </xsd:complexType>
+
+  <xsd:element name="one" type="one.type" />
+
+  <xsd:complexType name="one.type" />
+
+  <xsd:element name="zero" type="zero.type" />
+
+  <xsd:complexType name="zero.type" />
+
+  <xsd:simpleType name="basis.type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="identity" />
+      <xsd:enumeration value="identityGlobals" />
+      <xsd:enumeration value="uninitialized" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="Locals" type="vars.type"></xsd:element>
+
+  <xsd:element name="Variables" type="Variables.type">
+    <xsd:key name="variable-ids">
+      <xsd:selector xpath="Globals/var | Locals/var" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="pointer-ids" refer="variable-ids">
+      <xsd:selector xpath="Pointers/var"/>
+      <xsd:field xpath="@id"/>
+    </xsd:keyref>
+  </xsd:element>
+
+  <xsd:complexType name="Variables.type">
+    <xsd:sequence>
+      <xsd:element ref="Globals" />
+      <xsd:element ref="Locals" />
+      <xsd:element ref="Pointers" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

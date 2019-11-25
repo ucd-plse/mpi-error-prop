@@ -1,0 +1,86 @@
+from itertools import chain, imap
+
+Import('env')
+env = env.Clone(
+    tools=[
+        'compare',
+        'compress-wpds',
+        'preprocess',
+        'tests',
+        'wpds',
+        ],
+    toolpath=[
+        '..',
+        '../../main',
+        '../../tests',
+        ]
+    )
+
+
+########################################################################
+#
+#  create build targets for all configured tests
+#
+
+
+for testdir, config in env.Tests():
+    enabled_frontends = [x.strip() for x in config.get('create wpds', 'enabled').split()]
+    if 'all' not in enabled_frontends:
+        if 'cil' not in enabled_frontends:
+            continue
+
+    if config.get('create wpds', 'language') != 'C':
+        continue
+
+    tenv = env.Clone()
+
+    source = testdir.File('source.c')
+    cppout = File('source.i', testdir.name)
+    env.Preprocess(cppout, source, basedir=Dir('../../..'))
+    env.Clean(cppout, cppout.dir)
+
+    sign = config.get('create wpds', 'sign')
+    tenv.AppendUnique(WPDS_XML_FLAGS='--' + sign)
+    tenv['ERROR_CODES'] = File('../../../%s-error-codes.txt' % sign)
+
+    entry_points = config.get('create wpds', 'entry points')
+    if entry_points:
+        entry_points = testdir.File(entry_points)
+        tenv['WPDS_MAIN_FUNCTION_FILE'] = entry_points
+
+    setting = config.getboolean('create wpds', 'transformation')
+    flag = ('--notransf', '--transf')[setting]
+    tenv.AppendUnique(WPDS_XML_FLAGS=flag)
+
+    if not config.getboolean('create wpds', 'error handling'):
+        tenv.AppendUnique(WPDS_XML_FLAGS='--noerrorhandling')
+
+    analysis = config.get('analyze wpds', 'analysis')
+    aenv = tenv.Clone()
+    if analysis != 'standard':
+        aenv.AppendUnique(EDP_FLAGS='--' + analysis)
+
+    for mode in ['copy', 'transfer']:
+        menv = aenv.Clone()
+        menv.AppendUnique(WPDS_XML_FLAGS='--' + mode)
+        wpds = cppout.File('%s.wpds' % mode)
+        menv.CilWpds(wpds, cppout)
+        cwpds = menv.CompressWpds(wpds)[0]
+        edp = menv.EDP(cwpds)[0]
+        expected = source.File('%s.expected' % mode)
+        passed = menv.Compare([edp, expected])
+        Alias('test-' + mode, passed)
+
+    # running analysis with '--handled' option on specific tests
+    if config.getboolean('analyze wpds', 'handled'):
+        henv = aenv.Clone()
+        copy_wpds = cppout.File('copy-c.wpds')
+        handled_wpds = cppout.File('handled-c.wpds')
+        henv.InstallAs(handled_wpds, copy_wpds)
+        henv.AppendUnique(EDP_FLAGS='--handled')
+        handled = cppout.File('handled.out')
+        henv.EDP(handled, handled_wpds)[0]
+        expected = source.File('handled.expected')
+        passed = henv.Compare([handled, expected])
+        Alias('test-handled', passed)
+

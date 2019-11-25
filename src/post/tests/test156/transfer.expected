@@ -1,0 +1,35 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test156/source.c:19: overwriting potential unchecked error in variable "*v"
+post/tests/test156/source.c:19:"*v" may have an unchecked error
+post/tests/test156/source.c:16:"*v" may have an unchecked error
+post/tests/test156/source.c:16:"*v" receives an error from "TENTATIVE_EIO"
+
+post/tests/test156/source.c:19: overwriting potential unchecked error in variable "*v"
+post/tests/test156/source.c:16:"*v" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_E2BIG 
+
+post/tests/test156/source.c:46: overwriting potential unchecked error in variable "*v"
+post/tests/test156/source.c:46:"*v" may have an unchecked error
+post/tests/test156/source.c:45:"*v" may have an unchecked error
+post/tests/test156/source.c:45:"*v" receives an error from "TENTATIVE_E2BIG"
+
+post/tests/test156/source.c:46: overwriting potential unchecked error in variable "*v"
+post/tests/test156/source.c:45:"*v" receives an error from "TENTATIVE_E2BIG"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test156/source.c:52: potential unchecked error in out of scope variable "*y"
+post/tests/test156/source.c:46:"*y" may have an unchecked error
+post/tests/test156/source.c:45:"*y" may have an unchecked error
+post/tests/test156/source.c:40:"*y" may have an unchecked error
+post/tests/test156/source.c:35:"*y" may have an unchecked error
+post/tests/test156/source.c:30:"*y" receives an error from "x"
+post/tests/test156/source.c:30:"x" may have an unchecked error
+post/tests/test156/source.c:28:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test156/source.c:52: potential unchecked error in out of scope variable "*y"
+post/tests/test156/source.c:30:"*y" receives an error from "x"
+post/tests/test156/source.c:28:"x" receives an error from "TENTATIVE_EIO"
+====

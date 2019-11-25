@@ -1,0 +1,5 @@
+*.passed
+*.out
+*.bc
+*.wpds
+unit-tests

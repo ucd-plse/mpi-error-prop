@@ -1,0 +1,6 @@
+post/tests/test163/source.c:22{target:error1:TENTATIVE_ENXIO,TENTATIVE_EIO}
+post/tests/test163/source.c:22{source:error2:TENTATIVE_ENOEXEC,TENTATIVE_E2BIG}
+post/tests/test163/source.c:39{target:error:TENTATIVE_ECHILD,TENTATIVE_EBADF}
+post/tests/test163/source.c:39{source:foo$return:ENOEXEC,E2BIG}
+post/tests/test163/source.c:41{target:error:ENOEXEC,E2BIG}
+post/tests/test163/source.c:41{source:TENTATIVE_EIO:TENTATIVE_EIO}

@@ -1,0 +1,41 @@
+post/tests/test181/source.c:29: Dereferencing variable foo#pnr, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test181/source.c:36:"pnr" may have an unchecked error
+post/tests/test181/source.c:35:"pnr" may have an unchecked error
+post/tests/test181/source.c:35:"pnr" receives an error from "cabs2cil_"
+post/tests/test181/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:35:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test181/source.c:29: Dereferencing variable foo#pnr, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test181/source.c:36:"pnr" may have an unchecked error
+post/tests/test181/source.c:35:"pnr" receives an error from "cabs2cil_"
+post/tests/test181/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:35:"TENTATIVE_ENXIO" error is passed as argument
+====
+post/tests/test181/source.c:39: Dereferencing variable main#x, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test181/source.c:38:"x" may have an unchecked error
+post/tests/test181/source.c:38:"x" receives an error from "cabs2cil_"
+post/tests/test181/source.c:38:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:38:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test181/source.c:39: Dereferencing variable main#x, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test181/source.c:38:"x" receives an error from "cabs2cil_"
+post/tests/test181/source.c:38:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:38:"TENTATIVE_E2BIG" error is passed as argument
+====
+post/tests/test181/source.c:44: Dereferencing variable main#x, which must contain one of the following error codes: TENTATIVE_ECHILD* 
+post/tests/test181/source.c:43:"x" may have an unchecked error
+post/tests/test181/source.c:43:"x" receives an error from "cabs2cil_"
+post/tests/test181/source.c:43:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:43:"TENTATIVE_ECHILD" error is passed as argument
+
+post/tests/test181/source.c:44: Dereferencing variable main#x, which must contain one of the following error codes: TENTATIVE_ECHILD* 
+post/tests/test181/source.c:43:"x" receives an error from "cabs2cil_"
+post/tests/test181/source.c:43:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test181/source.c:19: an unchecked error may be returned
+post/tests/test181/source.c:43:"TENTATIVE_ECHILD" error is passed as argument
+====

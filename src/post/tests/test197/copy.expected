@@ -1,0 +1,78 @@
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test197/source.c:8: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:7:"rc" may have an unchecked error
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test197/source.c:8: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test197/source.c:12: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:11:"error" may have an unchecked error
+post/tests/test197/source.c:7:"error" may have an unchecked error
+post/tests/test197/source.c:5:"error" may have an unchecked error
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test197/source.c:12: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test197/source.c:16: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:15:"error" may have an unchecked error
+post/tests/test197/source.c:11:"error" may have an unchecked error
+post/tests/test197/source.c:7:"error" may have an unchecked error
+post/tests/test197/source.c:5:"error" may have an unchecked error
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test197/source.c:16: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test197/source.c:16: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:15:"rc" may have an unchecked error
+post/tests/test197/source.c:11:"rc" may have an unchecked error
+post/tests/test197/source.c:7:"rc" may have an unchecked error
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test197/source.c:16: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test197/source.c:19: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:15:"error" may have an unchecked error
+post/tests/test197/source.c:11:"error" may have an unchecked error
+post/tests/test197/source.c:7:"error" may have an unchecked error
+post/tests/test197/source.c:5:"error" may have an unchecked error
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test197/source.c:19: potential unchecked error in out of scope variable "error"
+post/tests/test197/source.c:4:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_ENXIO 
+
+post/tests/test197/source.c:19: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:15:"rc" may have an unchecked error
+post/tests/test197/source.c:11:"rc" may have an unchecked error
+post/tests/test197/source.c:7:"rc" may have an unchecked error
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test197/source.c:19: potential unchecked error in out of scope variable "rc"
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====
+Error codes: *ENXIO EIO 
+
+post/tests/test197/source.c:24: potential non-tentative unchecked error is not saved
+post/tests/test197/source.c:12: an unchecked error may be returned
+post/tests/test197/source.c:11:"rc" may have an unchecked error
+post/tests/test197/source.c:7:"rc" may have an unchecked error
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test197/source.c:24: potential non-tentative unchecked error is not saved
+post/tests/test197/source.c:12: an unchecked error may be returned
+post/tests/test197/source.c:5:"rc" receives an error from "TENTATIVE_ENXIO"
+====

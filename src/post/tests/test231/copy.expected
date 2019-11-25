@@ -1,0 +1,2 @@
+post/tests/test231/source.c 17 foo1$return EIO 
+post/tests/test231/source.c 20 foo2$return ENXIO 

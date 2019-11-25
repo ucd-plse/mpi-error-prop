@@ -1,0 +1,2 @@
+post/tests/test240/source.c 17 chdir#error EIO 
+post/tests/test240/source.c 21 chdir#error EIO 

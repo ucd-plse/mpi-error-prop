@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test194/source.cpp:24: overwriting potential non-tentative unchecked error in variable "rv"
+post/tests/test194/source.cpp:23:"rv" may have an unchecked error
+post/tests/test194/source.cpp:23:"rv" receives an error from function "_ZN6Source8getErrorEv"
+post/tests/test194/source.cpp:19: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test194/source.cpp:24: overwriting potential non-tentative unchecked error in variable "rv"
+post/tests/test194/source.cpp:23:"rv" receives an error from function "_ZN6Source8getErrorEv"
+post/tests/test194/source.cpp:19: unchecked error "TENTATIVE_EIO" is returned
+====

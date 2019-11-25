@@ -1,0 +1,19 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test65/source.c:17: potential unchecked error in out of scope variable "error"
+post/tests/test65/source.c:6:"error" may have an unchecked error
+post/tests/test65/source.c:4:"error" may have an unchecked error
+post/tests/test65/source.c:3:"error" receives an error from "TENTATIVE_EIO"
+
+post/tests/test65/source.c:17: potential unchecked error in out of scope variable "error"
+post/tests/test65/source.c:3:"error" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test65/source.c:17: potential unchecked error in out of scope variable "nonerror"
+post/tests/test65/source.c:6:"nonerror" may have an unchecked error
+post/tests/test65/source.c:4:"nonerror" receives an error from "TENTATIVE_EIO"
+
+post/tests/test65/source.c:17: potential unchecked error in out of scope variable "nonerror"
+post/tests/test65/source.c:4:"nonerror" receives an error from "TENTATIVE_EIO"
+====

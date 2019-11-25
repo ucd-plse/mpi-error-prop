@@ -1,0 +1,81 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test161/source.c:31: overwriting potential unchecked error in variable "rc"
+post/tests/test161/source.c:30:"rc" receives an error from function "PTR_ERR"
+post/tests/test161/source.c:7: an unchecked error may be returned
+post/tests/test161/source.c:30:"errp" may have an unchecked error
+post/tests/test161/source.c:26:"errp" may have an unchecked error
+post/tests/test161/source.c:24:"errp" may have an unchecked error
+post/tests/test161/source.c:23:"errp" may have an unchecked error
+post/tests/test161/source.c:23:"errp" receives an error from "cabs2cil_"
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test161/source.c:31: overwriting potential unchecked error in variable "rc"
+post/tests/test161/source.c:30:"rc" receives an error from function "PTR_ERR"
+post/tests/test161/source.c:7: an unchecked error may be returned
+post/tests/test161/source.c:30:"errp" may have an unchecked error
+post/tests/test161/source.c:23:"errp" receives an error from "cabs2cil_"
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test161/source.c:35:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:31:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:30:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:26:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:24:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:23:"cabs2cil_" may have an unchecked error
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope variable "err"
+post/tests/test161/source.c:35:"err" may have an unchecked error
+post/tests/test161/source.c:31:"err" may have an unchecked error
+post/tests/test161/source.c:30:"err" may have an unchecked error
+post/tests/test161/source.c:26:"err" may have an unchecked error
+post/tests/test161/source.c:24:"err" may have an unchecked error
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope variable "err"
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope pointer variable "errp"
+post/tests/test161/source.c:35:"errp" may have an unchecked error
+post/tests/test161/source.c:31:"errp" may have an unchecked error
+post/tests/test161/source.c:30:"errp" may have an unchecked error
+post/tests/test161/source.c:26:"errp" may have an unchecked error
+post/tests/test161/source.c:24:"errp" may have an unchecked error
+post/tests/test161/source.c:23:"errp" may have an unchecked error
+post/tests/test161/source.c:23:"errp" receives an error from "cabs2cil_"
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test161/source.c:39: potential unchecked error in out of scope pointer variable "errp"
+post/tests/test161/source.c:23:"errp" receives an error from "cabs2cil_"
+post/tests/test161/source.c:23:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test161/source.c:12: an unchecked error may be returned
+post/tests/test161/source.c:23:"err" may have an unchecked error
+post/tests/test161/source.c:22:"err" receives an error from "TENTATIVE_EIO"
+====

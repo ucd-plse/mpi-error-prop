@@ -1,0 +1,27 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test153/source.c:33: potential unchecked error in out of scope variable "err2"
+post/tests/test153/source.c:31:"err2" receives an error from "cabs2cil_"
+post/tests/test153/source.c:31:"cabs2cil_" receives an error from function "foo"
+post/tests/test153/source.c:24: an unchecked error may be returned
+post/tests/test153/source.c:23:"rc" receives an error from "cabs2cil_"
+post/tests/test153/source.c:23:"cabs2cil_" receives an error from function "PTR_ERR"
+post/tests/test153/source.c:8: an unchecked error may be returned
+post/tests/test153/source.c:23:"error" may have an unchecked error
+post/tests/test153/source.c:31:"errp" may have an unchecked error
+post/tests/test153/source.c:30:"errp" may have an unchecked error
+post/tests/test153/source.c:30:"errp" receives an error from "err"
+post/tests/test153/source.c:29:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test153/source.c:33: potential unchecked error in out of scope variable "err2"
+post/tests/test153/source.c:31:"err2" receives an error from "cabs2cil_"
+post/tests/test153/source.c:31:"cabs2cil_" receives an error from function "foo"
+post/tests/test153/source.c:24: an unchecked error may be returned
+post/tests/test153/source.c:23:"rc" receives an error from "cabs2cil_"
+post/tests/test153/source.c:23:"cabs2cil_" receives an error from function "PTR_ERR"
+post/tests/test153/source.c:8: an unchecked error may be returned
+post/tests/test153/source.c:23:"error" may have an unchecked error
+post/tests/test153/source.c:31:"errp" may have an unchecked error
+post/tests/test153/source.c:30:"errp" receives an error from "err"
+post/tests/test153/source.c:29:"err" receives an error from "TENTATIVE_EIO"
+====

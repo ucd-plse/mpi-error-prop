@@ -1,0 +1,6 @@
+ID|main.10bbe 
+PRE_INTRA|main.10bbe PRE|CALL|foo PRE|STORE|main#err1 PRE|CALL|foo PRE|STORE|main#err2 PRE|LOAD|main#err1 
+POST_INTRA|main.10bbe 
+ID|main.17bbe 
+PRE_INTRA|main.17bbe PRE|CALL|foo PRE|STORE|main#err1 PRE|CALL|foo PRE|STORE|main#err2 PRE|LOAD|main#err1 PRE|STORE|struct.S.0.0 PRE|STORE|struct.S.0.1 PRE|LOAD|main#err2 
+POST_INTRA|main.17bbe POST|STORE|struct.S.0.0 

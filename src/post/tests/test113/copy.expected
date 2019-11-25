@@ -1,0 +1,54 @@
+Error codes: *EIO 
+
+post/tests/test113/source.c:8: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" may have an unchecked error
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test113/source.c:8: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *EIO 
+
+post/tests/test113/source.c:14: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test113/source.c:13:"cabs2cil_" may have an unchecked error
+post/tests/test113/source.c:13:"cabs2cil_" receives an error from function "foo1"
+post/tests/test113/source.c:8: an unchecked error may be returned
+post/tests/test113/source.c:7:"err" receives an error from "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test113/source.c:14: potential non-tentative unchecked error in out of scope variable "cabs2cil_"
+post/tests/test113/source.c:13:"cabs2cil_" receives an error from function "foo1"
+post/tests/test113/source.c:8: an unchecked error may be returned
+post/tests/test113/source.c:7:"err" receives an error from "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *EIO 
+
+post/tests/test113/source.c:19: potential non-tentative unchecked error is not saved
+post/tests/test113/source.c:14: an unchecked error may be returned
+post/tests/test113/source.c:13:"err2" receives an error from "cabs2cil_"
+post/tests/test113/source.c:13:"cabs2cil_" receives an error from function "foo1"
+post/tests/test113/source.c:8: an unchecked error may be returned
+post/tests/test113/source.c:7:"err" receives an error from "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+
+post/tests/test113/source.c:19: potential non-tentative unchecked error is not saved
+post/tests/test113/source.c:14: an unchecked error may be returned
+post/tests/test113/source.c:13:"err2" receives an error from "cabs2cil_"
+post/tests/test113/source.c:13:"cabs2cil_" receives an error from function "foo1"
+post/tests/test113/source.c:8: an unchecked error may be returned
+post/tests/test113/source.c:7:"err" receives an error from "cabs2cil_"
+post/tests/test113/source.c:7:"cabs2cil_" receives an error from function "foo"
+post/tests/test113/source.c:3: an unchecked error may be returned
+post/tests/test113/source.c:2:"ret" receives an error from "TENTATIVE_EIO"
+====

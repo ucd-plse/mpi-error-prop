@@ -1,0 +1,10 @@
+/Makefile
+/Makefile.features
+/autom4te.cache
+/config.h
+/config.log
+/config.mk
+/config.status
+/configure
+/obj/
+/testtype.o

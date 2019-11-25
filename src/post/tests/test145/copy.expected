@@ -1,0 +1,44 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope pointer variable "acl"
+post/tests/test145/source.c:15:"acl" may have an unchecked error
+post/tests/test145/source.c:15:"acl" receives an error from "cabs2cil_"
+post/tests/test145/source.c:15:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test145/source.c:5: an unchecked error may be returned
+post/tests/test145/source.c:15:"retval" may have an unchecked error
+post/tests/test145/source.c:14:"retval" may have an unchecked error
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope pointer variable "acl"
+post/tests/test145/source.c:15:"acl" receives an error from "cabs2cil_"
+post/tests/test145/source.c:15:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test145/source.c:5: an unchecked error may be returned
+post/tests/test145/source.c:15:"retval" may have an unchecked error
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test145/source.c:15:"cabs2cil_" may have an unchecked error
+post/tests/test145/source.c:15:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test145/source.c:5: an unchecked error may be returned
+post/tests/test145/source.c:15:"retval" may have an unchecked error
+post/tests/test145/source.c:14:"retval" may have an unchecked error
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test145/source.c:15:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test145/source.c:5: an unchecked error may be returned
+post/tests/test145/source.c:15:"retval" may have an unchecked error
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope variable "retval"
+post/tests/test145/source.c:15:"retval" may have an unchecked error
+post/tests/test145/source.c:14:"retval" may have an unchecked error
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+
+post/tests/test145/source.c:18: potential unchecked error in out of scope variable "retval"
+post/tests/test145/source.c:12:"retval" receives an error from "TENTATIVE_EIO"
+====

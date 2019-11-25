@@ -1,0 +1,66 @@
+Error codes: *E2BIG 
+
+post/tests/test185/source.c:73: overwriting potential non-tentative unchecked error in pointer variable "nr"
+post/tests/test185/source.c:69:"nr" may have an unchecked error
+post/tests/test185/source.c:68:"nr" may have an unchecked error
+post/tests/test185/source.c:64:"nr" may have an unchecked error
+post/tests/test185/source.c:63:"nr" receives an error from function "foo"
+post/tests/test185/source.c:34: an unchecked error may be returned
+post/tests/test185/source.c:34:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:34:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test185/source.c:73: overwriting potential non-tentative unchecked error in pointer variable "nr"
+post/tests/test185/source.c:63:"nr" receives an error from function "foo"
+post/tests/test185/source.c:34: an unchecked error may be returned
+post/tests/test185/source.c:34:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:34:"TENTATIVE_E2BIG" error is passed as argument
+====
+Error codes: *E2BIG 
+
+post/tests/test185/source.c:83: overwriting potential non-tentative unchecked error in pointer variable "nr"
+post/tests/test185/source.c:83:"nr" may have an unchecked error
+post/tests/test185/source.c:78:"nr" may have an unchecked error
+post/tests/test185/source.c:76:"nr" receives an error from function "foo"
+post/tests/test185/source.c:34: an unchecked error may be returned
+post/tests/test185/source.c:34:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:34:"TENTATIVE_E2BIG" error is passed as argument
+
+post/tests/test185/source.c:83: overwriting potential non-tentative unchecked error in pointer variable "nr"
+post/tests/test185/source.c:76:"nr" receives an error from function "foo"
+post/tests/test185/source.c:34: an unchecked error may be returned
+post/tests/test185/source.c:34:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:34:"TENTATIVE_E2BIG" error is passed as argument
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test185/source.c:91: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test185/source.c:84:"cabs2cil_" may have an unchecked error
+post/tests/test185/source.c:83:"cabs2cil_" may have an unchecked error
+post/tests/test185/source.c:78:"cabs2cil_" may have an unchecked error
+post/tests/test185/source.c:78:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:78:"TENTATIVE_EIO" error is passed as argument
+
+post/tests/test185/source.c:91: potential unchecked error in out of scope pointer variable "cabs2cil_"
+post/tests/test185/source.c:78:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test185/source.c:23: an unchecked error may be returned
+post/tests/test185/source.c:78:"TENTATIVE_EIO" error is passed as argument
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test185/source.c:91: potential unchecked error in out of scope variable "err"
+post/tests/test185/source.c:84:"err" may have an unchecked error
+post/tests/test185/source.c:83:"err" may have an unchecked error
+post/tests/test185/source.c:78:"err" may have an unchecked error
+post/tests/test185/source.c:76:"err" may have an unchecked error
+post/tests/test185/source.c:73:"err" may have an unchecked error
+post/tests/test185/source.c:69:"err" may have an unchecked error
+post/tests/test185/source.c:68:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test185/source.c:91: potential unchecked error in out of scope variable "err"
+post/tests/test185/source.c:68:"err" receives an error from "TENTATIVE_EIO"
+====

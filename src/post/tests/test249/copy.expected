@@ -1,0 +1,8 @@
+post/tests/test249/source.c:2:TENTATIVE_EIO* returned from function foo
+====
+post/tests/test249/source.c:6:EIO* returned from function bar
+post/tests/test249/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test249/source.c:6:EIO* returned from function bar
+post/tests/test249/source.c:2: unchecked error "TENTATIVE_EIO" is returned
+====

@@ -1,0 +1,48 @@
+# Build WALi library 
+
+## ####################################
+## Third party users of WALi should 
+## duplicate the setup code below.
+Import('env')
+import os,platform
+
+Debug          = False  ## just prints messages
+Is64           = env['Is64']
+WaliDir        = os.getcwd()
+LibInstallDir  = os.path.join(WaliDir,('lib','lib64')[Is64])
+BuildDir       = os.path.join(WaliDir,('_build','_build64')[Is64])
+BaseEnv        = env.Clone()
+MkStatic       = platform.system() == 'Windows'
+Platform       = platform.system()
+
+BaseEnv['CPPPATH'] = [ os.path.join(WaliDir , 'Source') ]
+BaseEnv.AppendUnique(CPPFLAGS='-isystem /unsup/boost-1.49.0/include')
+BaseEnv.Append(WARNING_FLAGS='')
+
+Export('Is64')
+Export('WaliDir')
+Export('LibInstallDir')
+Export('BuildDir')
+Export('MkStatic')
+Export('BaseEnv')
+Export('Platform')
+
+## Setup a default environment for building executables that use WALi
+ProgEnv = BaseEnv.Clone()
+ 
+if MkStatic:
+  ProgEnv['StaticLibs'] = [os.path.join(LibInstallDir,ProgEnv.subst('${LIBPREFIX}wali$LIBSUFFIX'))]
+else:
+  ProgEnv['StaticLibs'] = []
+  ProgEnv['LIBS'] = ['wali']
+  ProgEnv['LIBPATH'] = [ LibInstallDir ]
+
+Export('ProgEnv')
+Export('Debug')
+
+
+## ####################################
+
+
+SConscript(dirs=['Source'], variant_dir='_build', duplicate=0)
+SConscript(dirs=['AddOns/Parse'])

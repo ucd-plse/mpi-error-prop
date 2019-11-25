@@ -1,0 +1,6 @@
+ID|bar1.18bbe HNDL|CALL|callB 
+PRE_INTRA|bar1.18bbe PRE|CALL|foo2 PRE|STORE|bar1#err PRE|LOAD|bar1#err 
+POST_INTRA|bar1.18bbe POST|CALL|callB 
+ID|foo2.7bbe HNDL|CALL|callA HNDL|LOAD|foo2#err 
+PRE_INTRA|foo2.7bbe PRE|LOAD|foo2#err PRE|CALL|foo1 PRE|STORE|foo2#err 
+POST_INTRA|foo2.7bbe POST|CALL|callA POST|LOAD|foo2#err 

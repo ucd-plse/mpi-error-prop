@@ -1,0 +1,13 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test45/source.c:13: potential unchecked error in out of scope variable "err"
+post/tests/test45/source.c:10:"err" may have an unchecked error
+post/tests/test45/source.c:13:"err" may have an unchecked error
+post/tests/test45/source.c:7:"err" may have an unchecked error
+post/tests/test45/source.c:5:"err" may have an unchecked error
+post/tests/test45/source.c:9:"err" may have an unchecked error
+post/tests/test45/source.c:8:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test45/source.c:13: potential unchecked error in out of scope variable "err"
+post/tests/test45/source.c:8:"err" receives an error from "TENTATIVE_EIO"
+====

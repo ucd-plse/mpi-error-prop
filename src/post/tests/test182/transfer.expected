@@ -1,0 +1,19 @@
+post/tests/test182/source.c:28: Dereferencing variable foo#pnr, which may contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test182/source.c:41:"pnr" may have an unchecked error
+post/tests/test182/source.c:35:"pnr" may have an unchecked error
+post/tests/test182/source.c:34:"pnr" may have an unchecked error
+post/tests/test182/source.c:51:"pnr" may have an unchecked error
+post/tests/test182/source.c:50:"pnr" may have an unchecked error
+post/tests/test182/source.c:50:"pnr" receives an error from "cabs2cil_"
+post/tests/test182/source.c:50:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test182/source.c:18: an unchecked error may be returned
+post/tests/test182/source.c:50:"TENTATIVE_ENXIO" error is passed as argument
+
+post/tests/test182/source.c:28: Dereferencing variable foo#pnr, which may contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test182/source.c:41:"pnr" may have an unchecked error
+post/tests/test182/source.c:51:"pnr" may have an unchecked error
+post/tests/test182/source.c:50:"pnr" receives an error from "cabs2cil_"
+post/tests/test182/source.c:50:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test182/source.c:18: an unchecked error may be returned
+post/tests/test182/source.c:50:"TENTATIVE_ENXIO" error is passed as argument
+====

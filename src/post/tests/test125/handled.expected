@@ -1,0 +1,15 @@
+post/tests/test125/source.c:12: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test125/source.c:12:"rc" may have an unchecked error
+post/tests/test125/source.c:10:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test125/source.c:12: Handling error in variable main#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test125/source.c:10:"rc" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test125/source.c:12: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test125/source.c:12:"err" may have an unchecked error
+post/tests/test125/source.c:10:"err" may have an unchecked error
+post/tests/test125/source.c:9:"err" receives an error from "TENTATIVE_EIO"
+
+post/tests/test125/source.c:12: Handling error in variable main#err, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test125/source.c:9:"err" receives an error from "TENTATIVE_EIO"
+====

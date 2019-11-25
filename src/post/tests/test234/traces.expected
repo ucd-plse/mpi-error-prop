@@ -1,0 +1,3 @@
+ID|bar.19bbe HNDL|CALL|callA 
+PRE_INTRA|bar.19bbe PRE|CALL|foo 
+POST_INTRA|bar.19bbe POST|CALL|callA 

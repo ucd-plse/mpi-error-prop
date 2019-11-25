@@ -1,0 +1,8 @@
+post/tests/test115/source.c:6: Handling error in variable foo#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test115/source.c:6:"rc" may have an unchecked error
+post/tests/test115/source.c:5:"rc" may have an unchecked error
+post/tests/test115/source.c:4:"rc" receives an error from "TENTATIVE_EIO"
+
+post/tests/test115/source.c:6: Handling error in variable foo#rc, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test115/source.c:4:"rc" receives an error from "TENTATIVE_EIO"
+====

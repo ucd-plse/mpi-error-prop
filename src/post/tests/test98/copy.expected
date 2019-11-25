@@ -1,0 +1,26 @@
+Error codes: *EIO 
+
+post/tests/test98/source.c:19: overwriting potential non-tentative unchecked error in variable "result"
+post/tests/test98/source.c:18:"result" may have an unchecked error
+post/tests/test98/source.c:16:"result" receives an error from "status"
+post/tests/test98/source.c:14:"status" receives an error from function "getError"
+post/tests/test98/source.c:7: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test98/source.c:19: overwriting potential non-tentative unchecked error in variable "result"
+post/tests/test98/source.c:16:"result" receives an error from "status"
+post/tests/test98/source.c:14:"status" receives an error from function "getError"
+post/tests/test98/source.c:7: unchecked error "TENTATIVE_EIO" is returned
+====
+Error codes: *EIO 
+
+post/tests/test98/source.c:21: potential non-tentative unchecked error in out of scope variable "status"
+post/tests/test98/source.c:19:"status" may have an unchecked error
+post/tests/test98/source.c:18:"status" may have an unchecked error
+post/tests/test98/source.c:16:"status" may have an unchecked error
+post/tests/test98/source.c:14:"status" receives an error from function "getError"
+post/tests/test98/source.c:7: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test98/source.c:21: potential non-tentative unchecked error in out of scope variable "status"
+post/tests/test98/source.c:14:"status" receives an error from function "getError"
+post/tests/test98/source.c:7: unchecked error "TENTATIVE_EIO" is returned
+====

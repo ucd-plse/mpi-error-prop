@@ -1,0 +1,6 @@
+ID|chdir.10bbe 
+PRE_INTRA|chdir.10bbe PRE|CALL|user_path_at PRE|STORE|chdir#error PRE|LOAD|chdir#error 
+POST_INTRA|chdir.10bbe POST|LOAD|chdir#error 
+ID|chdir.15bbe 
+PRE_INTRA|chdir.15bbe PRE|CALL|user_path_at PRE|STORE|chdir#error PRE|LOAD|chdir#error PRE|CALL|inode_permission PRE|STORE|chdir#error PRE|LOAD|chdir#error 
+POST_INTRA|chdir.15bbe POST|CALL|path_put POST|LOAD|chdir#x POST|LOAD|chdir#error 

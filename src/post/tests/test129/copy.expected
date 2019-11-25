@@ -1,0 +1,10 @@
+Error codes: *EIO 
+
+post/tests/test129/source.c:34: potential non-tentative unchecked error in out of scope variable "retval"
+post/tests/test129/source.c:32:"retval" receives an error from function "write5"
+post/tests/test129/source.c:10: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test129/source.c:34: potential non-tentative unchecked error in out of scope variable "retval"
+post/tests/test129/source.c:32:"retval" receives an error from function "write5"
+post/tests/test129/source.c:10: unchecked error "TENTATIVE_EIO" is returned
+====

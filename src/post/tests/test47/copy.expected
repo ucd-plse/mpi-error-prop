@@ -1,0 +1,11 @@
+Error codes: *EIO 
+
+post/tests/test47/source.c:13: overwriting potential non-tentative unchecked error in variable "err"
+post/tests/test47/source.c:12:"err" may have an unchecked error
+post/tests/test47/source.c:11:"err" receives an error from function "foo"
+post/tests/test47/source.c:5: unchecked error "TENTATIVE_EIO" is returned
+
+post/tests/test47/source.c:13: overwriting potential non-tentative unchecked error in variable "err"
+post/tests/test47/source.c:11:"err" receives an error from function "foo"
+post/tests/test47/source.c:5: unchecked error "TENTATIVE_EIO" is returned
+====

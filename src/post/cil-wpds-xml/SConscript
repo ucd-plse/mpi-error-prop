@@ -1,0 +1,8 @@
+Import('env')
+
+SConscript(
+    dirs=[
+        'tests',
+        ],
+    exports='env',
+    )

@@ -1,0 +1,71 @@
+Import('env')
+
+env = env.Clone(
+    tools=[
+        'bitcode',
+	'compare',
+        'compress-wpds',
+        'tests',
+        'wpds',
+        ],
+    toolpath=[
+        '..',
+        '../../main',
+        '../../tests',
+        ])
+
+Alias('test-llvm', '.')
+#Alias('test', 'test-llvm')
+
+
+########################################################################
+#
+#  full test suite starting from C source code
+#
+
+
+for testdir, config in env.Tests():
+    enabled_frontends = [x.strip() for x in config.get('create wpds', 'enabled').split()]
+    if 'all' not in enabled_frontends:
+        if 'llvm' not in enabled_frontends:
+            continue
+
+    subdir = Dir(testdir.name)
+
+    tenv = env.Clone()
+
+    analysis = config.get('analyze wpds', 'analysis')
+    if analysis != 'standard':
+        tenv.AppendUnique(EDP_FLAGS='--' + analysis)
+
+    # find sign for error codes
+    sign = config.get('create wpds', 'sign')
+    tenv['ERROR_CODES_SIGN'] = sign
+    tenv['ERROR_CODES'] = File('../../../%s-error-codes.txt' % sign)
+
+    # find source file
+    language = config.get('create wpds', 'language')
+    suffix = {'C': 'c', 'C++': 'cpp'}[language]
+    source = testdir.File('source.' + suffix)
+
+    # translate source to bitcode
+    suffix = tenv.Bitcode.builder.suffix
+    bitcode = subdir.File('source' + suffix)
+    tenv.Bitcode(bitcode, source, basedir=Dir('../../..'))
+    Alias('test-bitcode', bitcode)
+
+    # bitcode to WPDS
+    wpds = subdir.File('copy.wpds')
+    tenv.LlvmWpds(wpds, bitcode)
+
+    # find expected output, either here or in common area
+    expected = subdir.File('copy.expected')
+    if not expected.exists():
+        expected = testdir.File(expected.name)
+        Clean(bitcode, subdir)
+
+    # running analysis
+    cwpds = tenv.CompressWpds(wpds)[0]
+    edp = tenv.EDP(cwpds)[0]
+    passed = tenv.Compare([edp, expected])
+    Alias('test-copy', passed)

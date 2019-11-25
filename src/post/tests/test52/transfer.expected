@@ -1,0 +1,48 @@
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test52/source.c:15: overwriting potential unchecked error in variable "w"
+post/tests/test52/source.c:10:"w" may have an unchecked error
+post/tests/test52/source.c:9:"w" may have an unchecked error
+post/tests/test52/source.c:7:"w" may have an unchecked error
+post/tests/test52/source.c:6:"w" may have an unchecked error
+post/tests/test52/source.c:5:"w" may have an unchecked error
+post/tests/test52/source.c:4:"w" receives an error from "TENTATIVE_EIO"
+
+post/tests/test52/source.c:15: overwriting potential unchecked error in variable "w"
+post/tests/test52/source.c:4:"w" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test52/source.c:16: overwriting potential unchecked error in variable "y"
+post/tests/test52/source.c:15:"y" may have an unchecked error
+post/tests/test52/source.c:10:"y" may have an unchecked error
+post/tests/test52/source.c:9:"y" may have an unchecked error
+post/tests/test52/source.c:7:"y" may have an unchecked error
+post/tests/test52/source.c:6:"y" receives an error from "TENTATIVE_EIO"
+
+post/tests/test52/source.c:16: overwriting potential unchecked error in variable "y"
+post/tests/test52/source.c:6:"y" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EIO 
+
+post/tests/test52/source.c:20: overwriting potential unchecked error in variable "z"
+post/tests/test52/source.c:19:"z" may have an unchecked error
+post/tests/test52/source.c:18:"z" may have an unchecked error
+post/tests/test52/source.c:17:"z" receives an error from "x"
+post/tests/test52/source.c:16:"x" may have an unchecked error
+post/tests/test52/source.c:15:"x" may have an unchecked error
+post/tests/test52/source.c:10:"x" receives an error from "TENTATIVE_EIO"
+
+post/tests/test52/source.c:20: overwriting potential unchecked error in variable "z"
+post/tests/test52/source.c:17:"z" receives an error from "x"
+post/tests/test52/source.c:10:"x" receives an error from "TENTATIVE_EIO"
+====
+Error codes: *TENTATIVE_EPERM 
+
+post/tests/test52/source.c:21: overwriting potential unchecked error in variable "y"
+post/tests/test52/source.c:20:"y" may have an unchecked error
+post/tests/test52/source.c:19:"y" receives an error from "TENTATIVE_EPERM"
+
+post/tests/test52/source.c:21: overwriting potential unchecked error in variable "y"
+post/tests/test52/source.c:19:"y" receives an error from "TENTATIVE_EPERM"
+====

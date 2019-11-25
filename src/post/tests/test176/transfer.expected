@@ -1,0 +1,41 @@
+post/tests/test176/source.c:26: Dereferencing variable main#r, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test176/source.c:25:"r" may have an unchecked error
+post/tests/test176/source.c:24:"r" may have an unchecked error
+post/tests/test176/source.c:22:"r" may have an unchecked error
+post/tests/test176/source.c:21:"r" may have an unchecked error
+post/tests/test176/source.c:21:"r" receives an error from "cabs2cil_"
+post/tests/test176/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+
+post/tests/test176/source.c:26: Dereferencing variable main#r, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test176/source.c:21:"r" receives an error from "cabs2cil_"
+post/tests/test176/source.c:21:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+====
+post/tests/test176/source.c:29: Dereferencing variable main#s, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test176/source.c:28:"s" may have an unchecked error
+post/tests/test176/source.c:27:"s" may have an unchecked error
+post/tests/test176/source.c:26:"s" may have an unchecked error
+post/tests/test176/source.c:25:"s" may have an unchecked error
+post/tests/test176/source.c:24:"s" may have an unchecked error
+post/tests/test176/source.c:22:"s" may have an unchecked error
+post/tests/test176/source.c:22:"s" receives an error from "cabs2cil_"
+post/tests/test176/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+
+post/tests/test176/source.c:29: Dereferencing variable main#s, which must contain one of the following error codes: TENTATIVE_ENXIO* 
+post/tests/test176/source.c:22:"s" receives an error from "cabs2cil_"
+post/tests/test176/source.c:22:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+====
+post/tests/test176/source.c:38: Dereferencing variable main#r, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test176/source.c:35:"r" may have an unchecked error
+post/tests/test176/source.c:35:"r" receives an error from "cabs2cil_"
+post/tests/test176/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+
+post/tests/test176/source.c:38: Dereferencing variable main#r, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test176/source.c:35:"r" receives an error from "cabs2cil_"
+post/tests/test176/source.c:35:"cabs2cil_" receives an error from function "ERR_PTR"
+post/tests/test176/source.c:13: an unchecked error may be returned
+====

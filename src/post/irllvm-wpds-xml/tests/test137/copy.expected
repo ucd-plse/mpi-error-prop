@@ -1,0 +1,22 @@
+post/tests/test137/source.c:13:TENTATIVE_ENXIO* TENTATIVE_EIO TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:12:"cabs2cil_1" receives an error from "number"
+post/tests/test137/source.c:7:"number" receives an error from "TENTATIVE_ENXIO"
+
+post/tests/test137/source.c:13:TENTATIVE_ENXIO* TENTATIVE_EIO TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:12:"cabs2cil_1" receives an error from "number"
+post/tests/test137/source.c:7:"number" receives an error from "TENTATIVE_ENXIO"
+====
+post/tests/test137/source.c:13:TENTATIVE_ENXIO TENTATIVE_EIO* TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:4:"cabs2cil_1" receives an error from "TENTATIVE_EIO"
+
+post/tests/test137/source.c:13:TENTATIVE_ENXIO TENTATIVE_EIO* TENTATIVE_E2BIG returned from function foo
+post/tests/test137/source.c:4:"cabs2cil_1" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test137/source.c:13:TENTATIVE_ENXIO TENTATIVE_EIO TENTATIVE_E2BIG* returned from function foo
+post/tests/test137/source.c:12:"cabs2cil_1" receives an error from "number"
+post/tests/test137/source.c:10:"number" receives an error from "TENTATIVE_E2BIG"
+
+post/tests/test137/source.c:13:TENTATIVE_ENXIO TENTATIVE_EIO TENTATIVE_E2BIG* returned from function foo
+post/tests/test137/source.c:12:"cabs2cil_1" receives an error from "number"
+post/tests/test137/source.c:10:"number" receives an error from "TENTATIVE_E2BIG"
+====

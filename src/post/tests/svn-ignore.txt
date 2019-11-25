@@ -1,0 +1,9 @@
+*.wpds
+*.i
+*.out
+*.passed
+*.log
+*.dot
+*.nt
+*.db
+*.2

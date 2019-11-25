@@ -1,0 +1,7 @@
+test*/*.bc
+test*/*.log
+test*/*.may-must-call
+test*/*.may-must-modify-global
+test*/*.out
+test*/*.passed
+test*/*.wpds

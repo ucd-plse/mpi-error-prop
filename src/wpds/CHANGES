@@ -1,0 +1,41 @@
+WALi/OpenNWA 4.0:
+  General features
+  - Added 'scons CXX=...' to choose compiler and strong_warnings=0 to disable
+    extra warning flags
+
+  General bug fixes
+  - Fixed building with broader range of compilers
+
+  WALi features:
+  - Added postorder visit functions to the witness visitor
+  - Significant API changes to the BinRel domain, and addition of a feature
+    to output diagrams
+  - Added a new callback class, DotAttributePrinter, which allows someone
+    calling WFA::print_dot to output extra attributes for either nodes
+    or edges.
+  - Added printStatistics() functions to WFA and WPDS
+
+  OpenNWA features:
+  - Added NWA statistics functions num{Call,Entry,Exit,Return}Sites in
+    opennwa::query (opennwa/query/automaton.hpp)
+
+  WALi bug fixes:
+  - Fixed a rather bad efficiency problem with path_summary; on large examples
+    this can run almost an order of magnitude faster.
+  - Use the cached theZero object in WPDS::post instead of creating a new
+    zero; this is important if you have a class (like Witness) that doesn't
+    cache its own zeroes.
+  - There is an optional setting to make Witness cache its zeros and ones.
+
+  OpenNWA bug fixes:
+  - Updated license and author information
+  - Fixed a bad performance problem with the NWA to WPDS conversion. Our code
+    didn't match our tech report. Our tech report created a number of PDS
+    states that was linear in the number of return points. Our code created a
+    number that was cubic. Oops.
+
+
+WALi/OpenNWA 4.0 RC1:
+
+ - This is where records basically peter out without looking into the
+   Subversion logs.

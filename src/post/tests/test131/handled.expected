@@ -1,0 +1,19 @@
+post/tests/test131/source.c:13: Handling error in variable main#err1, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test131/source.c:12:"err1" may have an unchecked error
+post/tests/test131/source.c:10:"err1" may have an unchecked error
+post/tests/test131/source.c:9:"err1" may have an unchecked error
+post/tests/test131/source.c:8:"err1" receives an error from "TENTATIVE_EIO"
+
+post/tests/test131/source.c:13: Handling error in variable main#err1, which must contain one of the following error codes: TENTATIVE_EIO* 
+post/tests/test131/source.c:8:"err1" receives an error from "TENTATIVE_EIO"
+====
+post/tests/test131/source.c:27: Handling error in variable main#err3, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test131/source.c:23:"err3" may have an unchecked error
+post/tests/test131/source.c:20:"err3" may have an unchecked error
+post/tests/test131/source.c:16:"err3" may have an unchecked error
+post/tests/test131/source.c:12:"err3" may have an unchecked error
+post/tests/test131/source.c:10:"err3" receives an error from "TENTATIVE_E2BIG"
+
+post/tests/test131/source.c:27: Handling error in variable main#err3, which must contain one of the following error codes: TENTATIVE_E2BIG* 
+post/tests/test131/source.c:10:"err3" receives an error from "TENTATIVE_E2BIG"
+====

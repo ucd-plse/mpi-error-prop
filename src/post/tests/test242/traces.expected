@@ -1,0 +1,4 @@
+ID|main.11bbe FN|CALL|foo HNDL|CALL|A 
+ID|main.16bbe FN|CALL|foo HNDL|CALL|B 
+ID|main.21bbe FN|CALL|foo HNDL|LOAD|main#x HNDL|CALL|C 
+ID|main.24bbe HNDL|CALL|C 
