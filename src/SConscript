@@ -106,7 +106,6 @@ env.AppendUnique(
 subdirs = [
     # third-party libraries
     'buddy',
-    'cil',
     'wpds',
     'lib',
 
@@ -116,15 +115,6 @@ subdirs = [
 
 if 'pdflatex' in env['TOOLS']:
     subdirs += [
-        'dissertation',
-        'ghc11',
-        'issta11',
-        'mozilla',
-        'paste10',
-        'phd-forum',
-        'pldi09',
-        'research-competition',
-        'specs-writeup',
         ]
 else:
     SCons.Warnings.warn(SCons.Warnings.WarningOnByDefault, 'pdflatex unavailable; skipping paper targets')
