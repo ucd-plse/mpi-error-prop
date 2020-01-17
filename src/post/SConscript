@@ -72,8 +72,6 @@ Alias('test',
 
 SConscript(
     dirs=[
-        'cil-wpds-xml',
-        'llvm-wpds-xml',
         'irllvm-wpds-xml',
         'main',
         ],

@@ -42,11 +42,9 @@ env = Environment(
     options=opts,
     tools=[
         'default',
-        'cil',
         'edp',
         ],
     toolpath=[
-        'cil',
         'post/tests',
         ],
     ERROR_CODES=File('negative-error-codes.txt'),
