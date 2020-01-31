@@ -226,8 +226,8 @@ Unexpected output in attric: (unknown)(): Other MPI error
 ### Full Logs
 
 Full fault injection logs for all of the bugs reports in MPICH and MVAPICH
-are available at
-https://mpi-error-prop-artifact.s3-us-west-2.amazonaws.com/mpi-error-prop-artifact-logs.tgz. This file is 22G uncompressed.
+are available 
+[here](http://web.cs.ucdavis.edu/~rubio/includes/mpi-error-prop-artifact-logs.tgz). This file is 22G uncompressed.
 
 A quick sanity check of the claim that 60% of the tests crashed during 
 fault injection can be done using the following command, after uncompressing
